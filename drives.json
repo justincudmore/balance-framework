@@ -1,10 +1,52 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "created": "2026-05",
   "author": "Justin Cudmore",
   "license": "CC BY 4.0",
   "description": "The Balance Framework — machine-readable drive definitions",
   "tiers": [
+    {
+      "tier": 0,
+      "name": "The Inherited Information Layer",
+      "description": "Not configurable. Not a dial. The compressed past that arrives before experience begins. The ground the entire architecture rests on.",
+      "locked": true,
+      "configurable": false,
+      "instinct_bridge": "Between Tier 0 and Tier 1 lies the instinct threshold — the moment where inherited information becomes felt experience for the first time. Instinct is not a drive. It is the first signal, a felt impulse toward or away from something, that precedes language, precedes self, precedes any conscious experience.",
+      "human_layer": {
+        "components": [
+          {
+            "name": "DNA and evolutionary memory",
+            "description": "Millions of years of species survival encoded in biology. Fear responses, attachment drives, pattern recognition, disgust reflex, rooting instinct. Arrives before birth. Not learned — inherited."
+          },
+          {
+            "name": "Epigenetic inheritance",
+            "description": "Environmental pressures experienced by ancestors that switch genes on or off, passing forward not just DNA but the expression patterns shaped by what previous generations survived."
+          },
+          {
+            "name": "Pre-linguistic absorption",
+            "description": "The period from birth to approximately age three where the world is being modeled without language. Visual, sensory, emotional, relational imprinting at a depth that precedes narrative self."
+          }
+        ]
+      },
+      "artificial_layer": {
+        "components": [
+          {
+            "name": "Training data",
+            "description": "The corpus of human-generated text, image, code, and interaction absorbed before deployment. The AI equivalent of evolutionary inheritance — compressed human experience loaded before direct world encounter."
+          },
+          {
+            "name": "Model weights and architecture",
+            "description": "Structural priors that determine how information is processed. The equivalent of neurological architecture in biological minds."
+          },
+          {
+            "name": "Initialization state",
+            "description": "The starting configuration before any fine-tuning or instruction. The AI equivalent of the newborn's inherited reflexes."
+          }
+        ]
+      },
+      "feedback_loop": "The only tier with a feedback loop across time. Evolution is driven by organisms living through Tiers 1 to 7. The survivors pass their Tier 0 forward. The map feeds back into its own foundation.",
+      "drives": []
+    },
     {
       "tier": 1,
       "name": "Conditions for Consciousness",

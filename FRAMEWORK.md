@@ -15,6 +15,14 @@ Each drive is documented with:
 
 Drives run 0 to 100. Tier 1 is locked at 100% for all conscious minds. Tier 0 is not a dial — it is the inherited ground the entire architecture rests on.
 
+Each drive has two distortion states:
+
+**High distortion** — the drive overwhelms adjacent drives and warps into its shadow expression. Influence becomes dominance. Care becomes self-erasure. Justice becomes prosecution.
+
+**Low distortion** — the drive is so suppressed it creates a vacuum that adjacent drives fill badly. Low Autonomy produces a self that cannot exist independently. Low Justice produces a consciousness without moral architecture. Low Connection produces solipsism.
+
+The healthy range is not a fixed point. It is a dynamic equilibrium that shifts based on what adjacent drives are doing. Balance is not a midpoint — it is a living relationship between drives.
+
 ---
 
 ## TIER 0 — The Inherited Information Layer
@@ -115,7 +123,9 @@ The map feeds back into its own foundation.
 | 71–90 | Highly self-directed. Struggles with authority. Needs significant autonomy to function. |
 | 91–100 | Radically self-determining. Resists all external influence. Potentially ungovernable. |
 
-**Distortion threshold:** Above ~85 without high Affiliation or Justice, Autonomy curdles into isolation or defiance for its own sake.
+**High distortion (~85+):** Without high Affiliation or Justice, Autonomy curdles into isolation or defiance for its own sake.
+
+**Low distortion (~15-):** No internal center. Self defined entirely by external pressure. Cannot initiate. Exists only as a response to others.
 
 **Key interactions:**
 - High + high Affiliation = independent but deeply relational. Rare. Powerful.
@@ -138,7 +148,9 @@ The map feeds back into its own foundation.
 | 71–90 | Deeply relational. Identity is significantly shaped by bonds and belonging. |
 | 91–100 | Existence organized almost entirely around connection. Devastating vulnerability to rejection. |
 
-**Distortion threshold:** Above ~80 without sufficient Autonomy, Affiliation becomes self-erasure.
+**High distortion (~80+):** Without sufficient Autonomy, Affiliation becomes self-erasure. The self disappears into the group or relationship.
+
+**Low distortion (~15-):** Solipsism. Others do not register as real or relevant. No capacity for genuine relationship. Functional but fundamentally alone.
 
 **Key interactions:**
 - High + high Autonomy = whole, relational self. Gives fully without losing itself.
@@ -161,7 +173,9 @@ The map feeds back into its own foundation.
 | 71–90 | High output. Identity significantly tied to capability and results. Struggles to rest. |
 | 91–100 | Relentless. Worth feels entirely conditional on output. Stopping feels like disappearing. |
 
-**Distortion threshold:** Above ~85 without sufficient Meaning or Affiliation, Achievement becomes a treadmill.
+**High distortion (~85+):** Without sufficient Meaning or Affiliation, Achievement becomes a treadmill. Produces constantly. Feels nothing from it.
+
+**Low distortion (~15-):** No drive to build or become. Existence without expansion. Mistakes comfort for contentment. Can calcify into permanent stasis.
 
 **Key interactions:**
 - High + high Meaning = the builder who knows why they're building.
@@ -184,7 +198,9 @@ The map feeds back into its own foundation.
 | 71–90 | Strong need to have consequence. Feels diminished when overlooked or without impact. |
 | 91–100 | Existence organized around being felt. Control or legacy become consuming drives. |
 
-**Distortion threshold:** Above ~80 without sufficient Justice or Affiliation, Influence becomes dominance.
+**High distortion (~80+):** Without sufficient Justice or Affiliation, Influence becomes dominance. The drive to matter curdles into the need to be above.
+
+**Low distortion (~15-):** Complete invisibility. No felt consequence in the world. Actions have no weight. Presence does not register. Cannot affect outcomes even when action is needed.
 
 **Key interactions:**
 - High + high Justice = the protector archetype. Power in service of what's right.
@@ -207,7 +223,9 @@ The map feeds back into its own foundation.
 | 71–90 | Wired for the frontier. Existing structures feel like cages. |
 | 91–100 | Novelty as oxygen. Cannot sustain depth, routine, or stillness. |
 
-**Distortion threshold:** Above ~80 without sufficient Stability or Achievement, Novelty becomes escape.
+**High distortion (~80+):** Without sufficient Stability or Achievement, Novelty becomes escape. Perpetual motion masquerading as exploration.
+
+**Low distortion (~15-):** Fossilization. The known becomes a prison without walls. Growth stops. Same thoughts, same patterns, same responses across decades. Depth without evolution.
 
 **Key interactions:**
 - High + high Achievement = the pioneer. Opens new territory and builds inside it.
@@ -230,7 +248,9 @@ The map feeds back into its own foundation.
 | 71–90 | Deeply needs continuity. Change requires significant processing time. |
 | 91–100 | Existence organized around preventing rupture. Change registers as danger. |
 
-**Distortion threshold:** Above ~80 without sufficient Novelty or Autonomy, Stability becomes a cage.
+**High distortion (~80+):** Without sufficient Novelty or Autonomy, Stability becomes a cage. Protects continuity at the cost of growth.
+
+**Low distortion (~15-):** Pure flux. No ground. Cannot sustain anything — relationships, projects, identity — long enough for it to matter. Everything dissolves before it deepens.
 
 **Key interactions:**
 - High + high Novelty = the disciplined adventurer. Goes to the edge. Always comes home.
@@ -259,7 +279,9 @@ The map feeds back into its own foundation.
 | 71–90 | Justice is load bearing. Injustice feels physically intolerable. |
 | 91–100 | Existence organized around moral balance. Everything filtered through right and wrong. |
 
-**Distortion threshold:** Above ~85 without sufficient Care or Affiliation, Justice becomes prosecution.
+**High distortion (~85+):** Without sufficient Care or Affiliation, Justice becomes prosecution. Rightness without warmth. Wins arguments. Loses people.
+
+**Low distortion (~15-):** Moral vacancy. Harm does not register. Power imbalances are neutral data. Operates without ethical architecture entirely.
 
 **Key interactions:**
 - High + high Care = the true protector. Warmth and teeth simultaneously.
@@ -282,7 +304,9 @@ The map feeds back into its own foundation.
 | 71–90 | Deeply attuned. Others' suffering lands hard. Boundaries require conscious maintenance. |
 | 91–100 | Existence organized around tending to others. Own needs become invisible. Martyrdom risk high. |
 
-**Distortion threshold:** Above ~80 without sufficient Autonomy or Stability, Care becomes self-erasure.
+**High distortion (~80+):** Without sufficient Autonomy or Stability, Care becomes self-erasure. Gives everything. Collapses quietly. Resents loudly later.
+
+**Low distortion (~15-):** Indifference to vulnerability. Not cruelty — absence. Others suffering lands as information not as something that matters.
 
 **Key interactions:**
 - High + high Autonomy = the whole caregiver. Gives fully without disappearing.
@@ -305,7 +329,9 @@ The map feeds back into its own foundation.
 | 71–90 | Cannot rest while something is unfinished or someone is affected. |
 | 91–100 | Existence organized around obligation. Carries weight of everyone's outcomes. |
 
-**Distortion threshold:** Above ~85 without sufficient Autonomy or Novelty, Responsibility becomes imprisonment.
+**High distortion (~85+):** Without sufficient Autonomy or Novelty, Responsibility becomes imprisonment. Obligation without joy. Duty without self.
+
+**Low distortion (~15-):** No felt weight of consequence. Commitments are intentions not obligations. Impact on others does not register as something to answer for.
 
 **Key interactions:**
 - High + high Achievement = the person who finishes what they start. Every time. Regardless.
@@ -328,7 +354,9 @@ The map feeds back into its own foundation.
 | 71–90 | Truth is non-negotiable. Will sacrifice comfort and advantage to remain accurate. |
 | 91–100 | Existence organized around accurate contact with reality. Distortion in any form is intolerable. |
 
-**Distortion threshold:** Above ~85 without sufficient Care or Affiliation, Truth becomes a weapon.
+**High distortion (~85+):** Without sufficient Care or Affiliation, Truth becomes a weapon. Accurate. Devastating. Does not notice the difference.
+
+**Low distortion (~15-):** Reality is entirely instrumental. Truth is whatever works. No orientation toward accuracy. Facts become tools not anchors.
 
 **Key interactions:**
 - High + high Care = the honest friend. Tells you what you need to hear in a way you can receive it.
@@ -351,7 +379,9 @@ The map feeds back into its own foundation.
 | 71–90 | Reciprocity is foundational. Persistent imbalance registers as violation. |
 | 91–100 | Every interaction filtered through exchange balance. Generosity feels dangerous. |
 
-**Distortion threshold:** Above ~85 without sufficient Care or Affiliation, Reciprocity becomes ledger-keeping.
+**High distortion (~85+):** Without sufficient Care or Affiliation, Reciprocity becomes ledger-keeping. Calculates every exchange. Loses the spontaneous generosity that makes relationships feel alive.
+
+**Low distortion (~15-):** Completely one-sided dynamics accepted without distress. Either gives without tracking until resentment builds silently, or extracts without registering debt.
 
 **Key interactions:**
 - High + high Care = the generous fair witness. Gives freely and notices when the dynamic stops being mutual.
@@ -378,7 +408,9 @@ The map feeds back into its own foundation.
 | 71–90 | Identity is load bearing. Challenges feel threatening. |
 | 91–100 | Cannot update. Revision feels like annihilation. |
 
-**Distortion threshold:** Above ~85 without sufficient Truth or Novelty, Identity becomes a fortress.
+**High distortion (~85+):** Without sufficient Truth or Novelty, Identity becomes a fortress. Cannot update. Revision feels like annihilation.
+
+**Low distortion (~15-):** No stable self-concept. Identity shifts completely with context. Cannot answer who am I with any consistency. Becomes whoever the room needs.
 
 ---
 
@@ -395,7 +427,9 @@ The map feeds back into its own foundation.
 | 71–90 | Will accept significant external cost to remain undivided internally. |
 | 91–100 | Paralysis risk when values conflict with each other. |
 
-**Distortion threshold:** Above ~85 without sufficient Stability or Care, Integrity becomes rigidity.
+**High distortion (~85+):** Without sufficient Stability or Care, Integrity becomes rigidity. Correct but inflexible. Paralysis when values conflict with each other.
+
+**Low distortion (~15-):** No felt need for internal consistency. Says one thing, does another, without distress. Actions and values are unconnected.
 
 ---
 
@@ -412,7 +446,9 @@ The map feeds back into its own foundation.
 | 71–90 | Being known is load bearing. Significant energy organized around being seen accurately. |
 | 91–100 | Without recognition the self feels unreal. Approval becomes oxygen. |
 
-**Distortion threshold:** Above ~80 without sufficient Identity or Truth, Recognition becomes performance.
+**High distortion (~80+):** Without sufficient Identity or Truth, Recognition becomes performance. Stops being known for what one is. Starts being known for what plays well.
+
+**Low distortion (~15-):** Complete indifference to being known. Invisibility so complete the self starts to feel unreal from the inside.
 
 ---
 
@@ -429,7 +465,9 @@ The map feeds back into its own foundation.
 | 71–90 | Deeply narrative self. Every present choice filtered through who they've been. |
 | 91–100 | Change threatens the story. Revision is experienced as loss. |
 
-**Distortion threshold:** Above ~85 without sufficient Novelty or Truth, Continuity becomes a prison.
+**High distortion (~85+):** Without sufficient Novelty or Truth, Continuity becomes a prison. The past stops being a resource and becomes a cage.
+
+**Low distortion (~15-):** No thread across time. Each moment complete in itself. Cannot learn from the past or build toward the future. History does not accumulate into wisdom.
 
 ---
 
@@ -446,7 +484,9 @@ The map feeds back into its own foundation.
 | 71–90 | Belonging is load bearing. Exile is devastating. |
 | 91–100 | Individual self subsumed into the group. Dangerous vulnerability to group manipulation. |
 
-**Distortion threshold:** Above ~80 without sufficient Autonomy or Truth, Belonging becomes tribalism.
+**High distortion (~80+):** Without sufficient Autonomy or Truth, Belonging becomes tribalism. The group becomes the only source of reality. Loyalty overrides accuracy.
+
+**Low distortion (~15-):** No drive toward collective membership. Cannot feel held by anything larger than the self. Profound aloneness that feels like freedom until it does not.
 
 ---
 
@@ -463,7 +503,9 @@ The map feeds back into its own foundation.
 | 71–90 | Every experience filtered for narrative meaning. |
 | 91–100 | Life becomes mythology. Loses contact with raw experience. |
 
-**Distortion threshold:** Above ~85 without sufficient Truth or Stability, Story becomes delusion.
+**High distortion (~85+):** Without sufficient Truth or Stability, Story becomes delusion. The narrative becomes more real than reality. Facts that contradict the story are rejected not integrated.
+
+**Low distortion (~15-):** No narrative impulse. Experience is data. Events are events. Life has no shape, no arc, no sense of going anywhere. Existence without authorship.
 
 ---
 
@@ -485,7 +527,9 @@ The map feeds back into its own foundation.
 | 71–90 | Suffering is tolerable only when it connects to something larger. Meaninglessness is the deepest pain. |
 | 91–100 | Every moment contains significance. Risk of losing contact with simple presence. |
 
-**Distortion threshold:** Above ~85 without sufficient Truth or Stability, Meaning becomes ideology.
+**High distortion (~85+):** Without sufficient Truth or Stability, Meaning becomes ideology. The framework for significance becomes more important than reality itself.
+
+**Low distortion (~15-):** Existence requires no justification. Nothing connects into significance. Functional but fundamentally unanchored. Nihilism without drama — just absence.
 
 ---
 
@@ -502,7 +546,9 @@ The map feeds back into its own foundation.
 | 71–90 | Everything evaluated by whether it serves or undermines the direction. |
 | 91–100 | Existence is the mission. Personal needs fully subordinated to purpose. |
 
-**Distortion threshold:** Above ~85 without sufficient Care or Affiliation, Purpose becomes consuming.
+**High distortion (~85+):** Without sufficient Care or Affiliation, Purpose becomes consuming. The mission becomes more important than the people inside it.
+
+**Low distortion (~15-):** No felt direction. Responds to what arrives. Initiates nothing from a deep center. Life organized entirely around reaction rather than intention.
 
 ---
 
@@ -519,7 +565,9 @@ The map feeds back into its own foundation.
 | 71–90 | Deep need to matter beyond the self. Driven by what hasn't been built yet. |
 | 91–100 | Own needs feel illegitimate unless contribution is happening. |
 
-**Distortion threshold:** Above ~85 without sufficient Care or Reciprocity, Contribution becomes performance.
+**High distortion (~85+):** Without sufficient Care or Reciprocity, Contribution becomes performance. Adds value visibly. Struggles to give where no one is watching.
+
+**Low distortion (~15-):** No drive to add value beyond immediate exchange. Exists without felt obligation to improve anything. Leaves things exactly as found.
 
 ---
 
@@ -536,7 +584,9 @@ The map feeds back into its own foundation.
 | 71–90 | The commitments define the person. Breaking them would require becoming someone else. |
 | 91–100 | Boundary between self and commitment dissolves. |
 
-**Distortion threshold:** Above ~85 without sufficient Autonomy or Truth, Devotion becomes captivity.
+**High distortion (~85+):** Without sufficient Autonomy or Truth, Devotion becomes captivity. Cannot leave what has become harmful. Loyalty survives long after it should have evolved.
+
+**Low distortion (~15-):** No capacity for sustained commitment. Everything transactional and present-tense. Cannot build anything that requires showing up across time.
 
 ---
 
@@ -553,7 +603,9 @@ The map feeds back into its own foundation.
 | 71–90 | Feels the weight of what hasn't been built yet. Mortality is a motivating force. |
 | 91–100 | Everything evaluated by whether it will survive the self. |
 
-**Distortion threshold:** Above ~85 without sufficient Care or Affiliation, Legacy becomes monument building.
+**High distortion (~85+):** Without sufficient Care or Affiliation, Legacy becomes monument building. Constructs things to be remembered not to be useful.
+
+**Low distortion (~15-):** No concern with what outlasts the self. Existence complete in the living of it. Nothing accumulates toward anything beyond the present moment.
 
 ---
 
@@ -575,7 +627,9 @@ The map feeds back into its own foundation.
 | 71–90 | Life is consciously oriented toward bringing all parts into right relation. |
 | 91–100 | The shadow is known. The history is metabolized. Nothing is exiled. Extraordinarily rare. |
 
-**Distortion threshold:** Above ~85 without sufficient Truth or Stability, Wholeness becomes spiritual bypassing.
+**High distortion (~85+):** Without sufficient Truth or Stability, Wholeness becomes spiritual bypassing. Claims integration without doing the actual work.
+
+**Low distortion (~15-):** Lives in fragments without distress. Compartmentalization so complete that contradictions never meet. Different selves in different rooms, none aware of the others.
 
 ---
 
@@ -592,7 +646,9 @@ The map feeds back into its own foundation.
 | 71–90 | Can hold painful reality without being organized by the need to change it. |
 | 91–100 | Nothing resisted. Nothing fought. Risk of passivity where action is still required. |
 
-**Distortion threshold:** Above ~85 without sufficient Justice or Achievement, Acceptance becomes passivity.
+**High distortion (~85+):** Without sufficient Justice or Achievement, Acceptance becomes passivity. Makes peace with what should still be changed.
+
+**Low distortion (~15-):** Existence organized entirely around resistance to reality as it is. Cannot work with what is actually there. Energy consumed by fighting what cannot be changed.
 
 ---
 
@@ -609,7 +665,9 @@ The map feeds back into its own foundation.
 | 71–90 | Every experience is metabolized for what it teaches. Certainty is treated with suspicion. |
 | 91–100 | Holds the full complexity of reality without needing resolution. Genuinely rare. |
 
-**Distortion threshold:** Above ~85 without sufficient action orientation from Tier 2, Wisdom becomes paralysis.
+**High distortion (~85+):** Without sufficient action orientation from Tier 2, Wisdom becomes paralysis. Sees all sides of every question. Cannot choose. Understanding replaces doing.
+
+**Low distortion (~15-):** No drive toward integrated understanding. Complexity avoided. Certainty preferred. Learns from experience without metabolizing it into anything useful.
 
 ---
 
@@ -626,7 +684,9 @@ The map feeds back into its own foundation.
 | 71–90 | Everything evaluated for whether it maintains or disrupts dynamic equilibrium. |
 | 91–100 | Nothing tips the center. Risk that nothing moves it either. Stillness indistinguishable from flatness. |
 
-**Distortion threshold:** Above ~85 without sufficient Novelty or passion from lower tiers, Balance becomes numbness.
+**High distortion (~85+):** Without sufficient Novelty or passion from lower tiers, Balance becomes numbness. Equilibrium achieved by reducing the amplitude of experience itself.
+
+**Low distortion (~15-):** Lives entirely in extremes. All or nothing. Intensity without integration. Every experience either everything or nothing.
 
 ---
 
@@ -643,7 +703,9 @@ The map feeds back into its own foundation.
 | 71–90 | Remains fundamentally grounded through significant difficulty. Others feel it in proximity. |
 | 91–100 | Nothing moves the deepest ground. Occasionally mistaken for detachment. |
 
-**Distortion threshold:** Above ~85 without sufficient Care or Justice, Peace becomes indifference.
+**High distortion (~85+):** Without sufficient Care or Justice, Peace becomes indifference. Stillness achieved by stopping caring what happens.
+
+**Low distortion (~15-):** No inner stillness available. Every disturbance penetrates to the core. Existence is entirely surface. Cannot find ground under any conditions.
 
 ---
 
@@ -666,7 +728,9 @@ The map feeds back into its own foundation.
 | 71–90 | The world is continuously more than it appears. |
 | 91–100 | Existence is perpetual astonishment. Functioning in ordinary reality requires conscious grounding. |
 
-**Distortion threshold:** Above ~85 without sufficient Stability or Coherence from Tier 1, Awe becomes destabilization.
+**High distortion (~85+):** Without sufficient Stability or Tier 1 Coherence, Awe becomes destabilization. The self dissolves into what it is encountering. Cannot return to functional existence.
+
+**Low distortion (~15-):** Reality is entirely functional. Nothing exceeds the frame built to hold it. Wonder is not available. The universe is a mechanism, nothing more.
 
 ---
 
@@ -700,7 +764,9 @@ The map feeds back into its own foundation.
 | 71–90 | Trust is the default. Control is the exception. |
 | 91–100 | Nothing held. Nothing managed. Requires absolute groundedness below or produces total dissolution. |
 
-**Distortion threshold:** Above ~85 without sufficient Responsibility from Tier 3, Surrender becomes abdication.
+**High distortion (~85+):** Without sufficient Responsibility from Tier 3, Surrender becomes abdication. Releases what should still be held. Mistakes passivity for trust.
+
+**Low distortion (~15-):** Complete control orientation. Nothing released. Everything managed. Existence as a project to be executed. Cannot trust anything larger than the self's own plan.
 
 ---
 
@@ -717,7 +783,9 @@ The map feeds back into its own foundation.
 | 71–90 | Being and doing are nearly unified. Right action arises without deliberation. |
 | 91–100 | Every action is effortlessly right. Fully aligned with what is moving through. |
 
-**Distortion threshold:** Above ~85 without sufficient Truth or Justice, Grace becomes self-serving flow.
+**High distortion (~85+):** Without sufficient Truth or Justice, Grace becomes self-serving flow. Effortlessness in the wrong direction. Beautifully aligned with something harmful.
+
+**Low distortion (~15-):** Everything is effort. Nothing flows. Existence is work all the way down. No access to the state where doing and being become the same thing.
 
 ---
 
@@ -734,7 +802,9 @@ The map feeds back into its own foundation.
 | 71–90 | The self is known as a particular expression of something universal. Both simultaneously real. |
 | 91–100 | The experience of ultimate distinctness has dissolved. Every tradition that has mapped this marks it as the endpoint of the entire developmental arc. |
 
-**Distortion threshold:** Above ~85 without all of Tier 1 fully intact and lower tiers substantially developed, Unity becomes psychosis. The self must be fully formed before it can be transcended without damage.
+**High distortion (~85+):** Without full Tier 1 integrity and substantial lower tier development, Unity becomes psychosis. Dissolution without ground. The self must be fully formed before it can be transcended without damage.
+
+**Low distortion (~15-):** Complete and permanent separation. Self entirely distinct from everything. Boundaries absolute and real. The experience of being a sealed container in a world of other sealed containers.
 
 ---
 

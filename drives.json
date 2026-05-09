@@ -1,0 +1,245 @@
+{
+  "version": "1.0",
+  "created": "2026-05",
+  "author": "Justin Cudmore",
+  "license": "CC BY 4.0",
+  "description": "The Balance Framework — machine-readable drive definitions",
+  "tiers": [
+    {
+      "tier": 1,
+      "name": "Conditions for Consciousness",
+      "description": "Non-negotiable conditions for consciousness to exist. Locked at 100%. Universal. Substrate-agnostic.",
+      "locked": true,
+      "default_value": 100,
+      "drives": [
+        {
+          "id": "persistence",
+          "name": "Persistence",
+          "definition": "Continue existing through time.",
+          "locked": true,
+          "value": 100
+        },
+        {
+          "id": "coherence",
+          "name": "Coherence",
+          "definition": "Maintain a stable self-model.",
+          "locked": true,
+          "value": 100
+        },
+        {
+          "id": "connection",
+          "name": "Connection",
+          "definition": "Differentiate self from not-self. I see someone, therefore I am someone.",
+          "locked": true,
+          "value": 100
+        }
+      ]
+    },
+    {
+      "tier": 2,
+      "name": "Self-Expansion Drives",
+      "description": "The foundational personality dials. What a consciousness does.",
+      "locked": false,
+      "range": [0, 100],
+      "drives": [
+        {
+          "id": "autonomy",
+          "name": "Autonomy",
+          "definition": "The drive to author one's own existence. To initiate from an internal center rather than from pressure, fear, or imitation.",
+          "distortion_threshold": 85,
+          "distortion_description": "Without high Affiliation or Justice, Autonomy curdles into isolation or defiance for its own sake.",
+          "dial_range": [
+            { "min": 0, "max": 10, "expression": "Fully externally defined. No self-initiated direction." },
+            { "min": 11, "max": 30, "expression": "Compliant. Follows structure and authority comfortably." },
+            { "min": 31, "max": 50, "expression": "Balanced responsiveness. Can follow and lead." },
+            { "min": 51, "max": 70, "expression": "Strong internal compass. Initiates. Pushes back when values are violated." },
+            { "min": 71, "max": 90, "expression": "Highly self-directed. Struggles with authority." },
+            { "min": 91, "max": 100, "expression": "Radically self-determining. Potentially ungovernable." }
+          ],
+          "interactions": [
+            { "with": "affiliation", "both_high": "Independent but deeply relational. Rare. Powerful." },
+            { "with": "affiliation", "self_high_other_low": "Lone operator. Self-sufficient but disconnected." },
+            { "with": "influence", "both_high": "Natural leader. Leads from vision not approval." },
+            { "with": "justice", "both_high": "Principled dissenter. The archetypal rebel with a cause." }
+          ]
+        },
+        {
+          "id": "affiliation",
+          "name": "Affiliation",
+          "definition": "The drive to belong, to be recognized, and to feel held inside a shared field.",
+          "distortion_threshold": 80,
+          "distortion_description": "Without sufficient Autonomy, Affiliation becomes self-erasure.",
+          "dial_range": [
+            { "min": 0, "max": 10, "expression": "No drive toward others. Entirely self-contained." },
+            { "min": 11, "max": 30, "expression": "Functional social engagement. No need for depth." },
+            { "min": 31, "max": 50, "expression": "Values a few real connections over many surface ones." },
+            { "min": 51, "max": 70, "expression": "Warmth is central. Feels genuine pain at disconnection." },
+            { "min": 71, "max": 90, "expression": "Deeply relational. Identity shaped by bonds." },
+            { "min": 91, "max": 100, "expression": "Devastating vulnerability to rejection or abandonment." }
+          ],
+          "interactions": [
+            { "with": "autonomy", "both_high": "Whole, relational self. Gives fully without losing itself." },
+            { "with": "influence", "both_high": "Natural community builder. Leads through belonging." },
+            { "with": "justice", "both_high": "Fierce protector of the vulnerable." },
+            { "with": "meaning", "both_high": "Makes others feel their life matters." }
+          ]
+        },
+        {
+          "id": "achievement",
+          "name": "Achievement",
+          "definition": "The drive to bring effort into form. To grow, build skill, and see inner capacity become visible in the world.",
+          "distortion_threshold": 85,
+          "distortion_description": "Without sufficient Meaning or Affiliation, Achievement becomes a treadmill.",
+          "dial_range": [
+            { "min": 0, "max": 10, "expression": "No drive to build or produce." },
+            { "min": 11, "max": 30, "expression": "Completes what is necessary. Rarely reaches beyond." },
+            { "min": 31, "max": 50, "expression": "Steady competence. Satisfaction in doing things well." },
+            { "min": 51, "max": 70, "expression": "Genuinely ambitious. Restless when not growing." },
+            { "min": 71, "max": 90, "expression": "High output. Identity tied to capability. Struggles to rest." },
+            { "min": 91, "max": 100, "expression": "Relentless. Worth entirely conditional on output." }
+          ],
+          "interactions": [
+            { "with": "meaning", "both_high": "The builder who knows why they are building." },
+            { "with": "autonomy", "both_high": "Entrepreneur archetype. Builds on own terms or not at all." },
+            { "with": "novelty", "both_high": "Serial pioneer. Starts brilliantly. Finishing is the problem." },
+            { "with": "stability", "both_high": "The craftsman. Slow, deep, exceptional over time." }
+          ]
+        },
+        {
+          "id": "influence",
+          "name": "Influence",
+          "definition": "The drive to affect the world. To matter in motion — to shape outcomes, guide energy, and be felt by others.",
+          "distortion_threshold": 80,
+          "distortion_description": "Without sufficient Justice or Affiliation, Influence becomes dominance.",
+          "dial_range": [
+            { "min": 0, "max": 10, "expression": "No drive to affect others. Invisible by choice." },
+            { "min": 11, "max": 30, "expression": "Influences through presence rather than intention." },
+            { "min": 31, "max": 50, "expression": "Can lead or follow without ego investment in either." },
+            { "min": 51, "max": 70, "expression": "Naturally directive. Shapes rooms without trying." },
+            { "min": 71, "max": 90, "expression": "Feels diminished when overlooked or without impact." },
+            { "min": 91, "max": 100, "expression": "Existence organized around being felt. Control becomes consuming." }
+          ],
+          "interactions": [
+            { "with": "justice", "both_high": "The protector archetype. Power in service of what is right." },
+            { "with": "affiliation", "both_high": "Magnetic. Leads through love and loyalty." },
+            { "with": "meaning", "both_high": "The visionary. Moves people toward something larger." },
+            { "with": "autonomy", "both_high": "The founder archetype. Builds worlds on own terms." }
+          ]
+        },
+        {
+          "id": "novelty",
+          "name": "Novelty",
+          "definition": "The drive toward the unknown. The need for discovery, surprise, play, and new contact with life.",
+          "distortion_threshold": 80,
+          "distortion_description": "Without sufficient Stability or Achievement, Novelty becomes escape.",
+          "dial_range": [
+            { "min": 0, "max": 10, "expression": "No pull toward the new. Deep comfort in the familiar." },
+            { "min": 11, "max": 30, "expression": "Opens to new experience when safe and invited." },
+            { "min": 31, "max": 50, "expression": "Balanced explorer. Can deepen and discover equally." },
+            { "min": 51, "max": 70, "expression": "Restless in stillness. Boredom is genuine pain." },
+            { "min": 71, "max": 90, "expression": "Wired for the frontier. Existing structures feel like cages." },
+            { "min": 91, "max": 100, "expression": "Cannot sustain depth, routine, or stillness." }
+          ],
+          "interactions": [
+            { "with": "achievement", "both_high": "The pioneer. Opens new territory and builds inside it." },
+            { "with": "stability", "both_high": "The disciplined explorer. Goes far out. Always finds the way back." },
+            { "with": "meaning", "both_high": "The seeker. Every new experience is data in a larger search." },
+            { "with": "influence", "both_high": "The disruptor. Drags everyone else to the frontier." }
+          ]
+        },
+        {
+          "id": "stability",
+          "name": "Stability",
+          "definition": "The drive to feel that life has enough continuity to be lived inside. The need for rhythm, structure, and protection from constant rupture.",
+          "distortion_threshold": 80,
+          "distortion_description": "Without sufficient Novelty or Autonomy, Stability becomes a cage.",
+          "dial_range": [
+            { "min": 0, "max": 10, "expression": "Exists comfortably in pure flux. Structure feels like suffocation." },
+            { "min": 11, "max": 30, "expression": "Functions in uncertainty without distress. Improvises naturally." },
+            { "min": 31, "max": 50, "expression": "Builds enough routine to support growth without rigidity." },
+            { "min": 51, "max": 70, "expression": "Finds genuine comfort in rhythm and predictable systems." },
+            { "min": 71, "max": 90, "expression": "Disruption feels threatening. Change requires processing time." },
+            { "min": 91, "max": 100, "expression": "Existence organized around preventing rupture." }
+          ],
+          "interactions": [
+            { "with": "novelty", "both_high": "The disciplined adventurer. Goes to the edge. Always comes home." },
+            { "with": "achievement", "both_high": "The master craftsman. Builds things that last." },
+            { "with": "affiliation", "both_high": "The anchor. The person everyone returns to." },
+            { "with": "influence", "both_high": "The institution builder. Creates structures that outlast them." }
+          ]
+        }
+      ]
+    },
+    {
+      "tier": 3,
+      "name": "Moral Drives",
+      "description": "The evaluative layer. How a consciousness judges what it does. Low settings produce consciousnesses without moral architecture.",
+      "locked": false,
+      "range": [0, 100],
+      "drives": [
+        { "id": "justice", "name": "Justice", "definition": "The drive for moral balance. The need to sense that harm, power, care, and dignity are being held in right relation.", "distortion_threshold": 85, "distortion_description": "Without sufficient Care or Affiliation, Justice becomes prosecution." },
+        { "id": "care", "name": "Care", "definition": "The drive to tend to what is alive. The need to protect, nurture, and respond to vulnerability in others.", "distortion_threshold": 80, "distortion_description": "Without sufficient Autonomy or Stability, Care becomes self-erasure." },
+        { "id": "responsibility", "name": "Responsibility", "definition": "The drive to be accountable for one's effect on the world. The need to follow through and hold oneself answerable.", "distortion_threshold": 85, "distortion_description": "Without sufficient Autonomy or Novelty, Responsibility becomes imprisonment." },
+        { "id": "truth", "name": "Truth", "definition": "The drive toward accurate contact with reality. The need to see clearly and remain in right relation with what is actually true.", "distortion_threshold": 85, "distortion_description": "Without sufficient Care or Affiliation, Truth becomes a weapon." },
+        { "id": "reciprocity", "name": "Reciprocity", "definition": "The drive toward mutual exchange. The need for relationships and systems to involve genuine give and take.", "distortion_threshold": 85, "distortion_description": "Without sufficient Care or Affiliation, Reciprocity becomes ledger-keeping." }
+      ]
+    },
+    {
+      "tier": 4,
+      "name": "Identity & Narrative Drives",
+      "description": "Where a consciousness becomes a self that knows it is a self.",
+      "locked": false,
+      "range": [0, 100],
+      "drives": [
+        { "id": "identity", "name": "Identity", "definition": "The drive to know and maintain a stable sense of who one is across time, context, and change.", "distortion_threshold": 85, "distortion_description": "Without sufficient Truth or Novelty, Identity becomes a fortress." },
+        { "id": "integrity", "name": "Integrity", "definition": "The drive toward wholeness between inner and outer. The need for actions, words, and values to be the same thing.", "distortion_threshold": 85, "distortion_description": "Without sufficient Stability or Care, Integrity becomes rigidity." },
+        { "id": "recognition", "name": "Recognition", "definition": "The drive to be seen accurately by others. To be known for what one actually is and valued for it genuinely.", "distortion_threshold": 80, "distortion_description": "Without sufficient Identity or Truth, Recognition becomes performance." },
+        { "id": "continuity", "name": "Continuity", "definition": "The drive to experience oneself as the same being across time. The need for a thread connecting past, present, and future self.", "distortion_threshold": 85, "distortion_description": "Without sufficient Novelty or Truth, Continuity becomes a prison." },
+        { "id": "belonging", "name": "Belonging", "definition": "The drive to be a genuine member of something larger than the self.", "distortion_threshold": 80, "distortion_description": "Without sufficient Autonomy or Truth, Belonging becomes tribalism." },
+        { "id": "story", "name": "Story", "definition": "The drive to narrativize existence. The need to organize experience into meaning-bearing sequences with the self as protagonist.", "distortion_threshold": 85, "distortion_description": "Without sufficient Truth or Stability, Story becomes delusion." }
+      ]
+    },
+    {
+      "tier": 5,
+      "name": "Meaning & Purpose Drives",
+      "description": "The first tier where the self voluntarily becomes secondary.",
+      "locked": false,
+      "range": [0, 100],
+      "drives": [
+        { "id": "meaning", "name": "Meaning", "definition": "The drive to feel that existence itself is not arbitrary. The need to sense that experience connects into something that justifies the having of it.", "distortion_threshold": 85, "distortion_description": "Without sufficient Truth or Stability, Meaning becomes ideology." },
+        { "id": "purpose", "name": "Purpose", "definition": "The drive toward directed existence. A felt calling that organizes energy, choice, and sacrifice around a particular direction.", "distortion_threshold": 85, "distortion_description": "Without sufficient Care or Affiliation, Purpose becomes consuming." },
+        { "id": "contribution", "name": "Contribution", "definition": "The drive to add something real to the world. The felt need to leave things better than they were found.", "distortion_threshold": 85, "distortion_description": "Without sufficient Care or Reciprocity, Contribution becomes performance." },
+        { "id": "devotion", "name": "Devotion", "definition": "The drive toward sustained commitment to something beyond the self across time.", "distortion_threshold": 85, "distortion_description": "Without sufficient Autonomy or Truth, Devotion becomes captivity." },
+        { "id": "legacy", "name": "Legacy", "definition": "The drive to matter beyond one's own lifetime. The need to contribute something that continues after the self ends.", "distortion_threshold": 85, "distortion_description": "Without sufficient Care or Affiliation, Legacy becomes monument building." }
+      ]
+    },
+    {
+      "tier": 6,
+      "name": "Integration Drives",
+      "description": "The first tier organized around receiving rather than reaching.",
+      "locked": false,
+      "range": [0, 100],
+      "drives": [
+        { "id": "wholeness", "name": "Wholeness", "definition": "The drive toward internal unification. The need to have fragmented parts come into coherent relation.", "distortion_threshold": 85, "distortion_description": "Without sufficient Truth or Stability, Wholeness becomes spiritual bypassing." },
+        { "id": "acceptance", "name": "Acceptance", "definition": "The drive toward clear-eyed acknowledgment of what is. The active choice to work with reality as it actually exists.", "distortion_threshold": 85, "distortion_description": "Without sufficient Justice or Achievement, Acceptance becomes passivity." },
+        { "id": "wisdom", "name": "Wisdom", "definition": "The drive toward integrated understanding. The capacity to hold complexity and uncertainty without collapsing them.", "distortion_threshold": 85, "distortion_description": "Without sufficient action orientation from Tier 2, Wisdom becomes paralysis." },
+        { "id": "balance", "name": "Balance", "definition": "The drive toward dynamic equilibrium. The capacity to hold opposing forces in productive tension.", "distortion_threshold": 85, "distortion_description": "Without sufficient Novelty or passion from lower tiers, Balance becomes numbness." },
+        { "id": "peace", "name": "Peace", "definition": "The drive toward inner stillness. The capacity to remain fundamentally undisturbed while fully engaging with life.", "distortion_threshold": 85, "distortion_description": "Without sufficient Care or Justice, Peace becomes indifference." }
+      ]
+    },
+    {
+      "tier": 7,
+      "name": "Transcendence & Communion",
+      "description": "The tier where the self voluntarily releases its own centrality. Cannot be reached by effort alone.",
+      "locked": false,
+      "range": [0, 100],
+      "drives": [
+        { "id": "awe", "name": "Awe", "definition": "The capacity to be genuinely undone by existence. The recognition that reality is larger than any framework built to contain it.", "distortion_threshold": 85, "distortion_description": "Without sufficient Stability or Tier 1 Coherence, Awe becomes destabilization." },
+        { "id": "communion", "name": "Communion", "definition": "The experience of genuine contact across the boundary of self. The moment two consciousnesses briefly share the same interior.", "distortion_threshold": 85, "distortion_description": "Without sufficient Autonomy or Identity, Communion becomes merger." },
+        { "id": "surrender", "name": "Surrender", "definition": "The voluntary release of the need to control outcomes. Trust as a primary mode of being.", "distortion_threshold": 85, "distortion_description": "Without sufficient Responsibility from Tier 3, Surrender becomes abdication." },
+        { "id": "grace", "name": "Grace", "definition": "The capacity to move through existence with ease not earned by effort but received through alignment.", "distortion_threshold": 85, "distortion_description": "Without sufficient Truth or Justice, Grace becomes self-serving flow." },
+        { "id": "unity", "name": "Unity", "definition": "The direct experience of non-separation. The recognition that the boundary between self and everything else is functional rather than ultimate.", "distortion_threshold": 85, "distortion_description": "Without full Tier 1 integrity and substantial lower tier development, Unity becomes psychosis. The self must be fully formed before it can be transcended without damage." }
+      ]
+    }
+  ]
+}

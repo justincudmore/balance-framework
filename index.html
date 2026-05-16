@@ -449,7 +449,7 @@ When drives act alone, they become recognizable patterns. This is where the fram
 <div class="explorer-header">
 <p>Interactive model</p>
 <h2>The architecture in three dimensions</h2>
-<p class="sub">Each node is a drive. Each node's size reflects its dial setting. The lines show the cascade between tiers.</p>
+<p class="sub">Colored lines show emergence — lower tiers enabling higher ones. Silver lines show recursion — higher drives reorganizing the system beneath them.</p>
 </div>
 <div id="explorer">
 <canvas id="exp-canvas"></canvas>
@@ -501,7 +501,7 @@ When drives act alone, they become recognizable patterns. This is where the fram
 <tr>
 <td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">2</td>
 <td><span class="tier-badge"><span class="tier-pip" style="background:#3A90C8"></span>Self-Expansion Drives</span></td>
-<td class="arch-drives">Autonomy · Affiliation · Achievement · Influence · Novelty · Stability</td>
+<td class="arch-drives">Awareness · Autonomy · Affiliation · Achievement · Influence · Novelty · Stability</td>
 <td class="arch-arc">I expand</td>
 <td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
 </tr>
@@ -522,7 +522,7 @@ When drives act alone, they become recognizable patterns. This is where the fram
 <tr>
 <td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">5</td>
 <td><span class="tier-badge"><span class="tier-pip" style="background:#C08020"></span>Meaning &amp; Purpose</span></td>
-<td class="arch-drives">Meaning · Purpose · Contribution · Devotion · Legacy</td>
+<td class="arch-drives">Meaning · Purpose · Contribution · Legacy</td>
 <td class="arch-arc">I know why</td>
 <td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
 </tr>
@@ -543,6 +543,24 @@ When drives act alone, they become recognizable patterns. This is where the fram
 </tbody>
 </table>
 <p style="margin-top:2rem;font-size:0.82rem;color:var(--muted);font-weight:300">Full drive definitions, bidirectional distortion thresholds, and interaction effects documented in <a href="https://github.com/justincudmore/balance-framework/blob/main/FRAMEWORK.md" style="color:var(--soft);text-decoration:none;border-bottom:0.5px solid var(--faint)">FRAMEWORK.md</a> on GitHub.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- RECURSIVE SYSTEM -->
+<div class="section fade-in">
+<span class="section-label">How the system operates</span>
+<div style="max-width:620px">
+<h2 style="font-family:var(--display);font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:200;line-height:1.2;letter-spacing:-0.025em;margin-bottom:1.75rem;color:var(--ink)">A recursive system, not a one-way ladder.</h2>
+<p style="font-size:0.95rem;color:var(--soft);line-height:1.85;font-weight:300;margin-bottom:1.25rem">The tiers are hierarchical in emergence, but recursive in operation. Lower tiers create the conditions for higher drives to develop. But once higher drives emerge, they reshape the lower drives beneath them.</p>
+<div style="margin:2rem 0;display:flex;flex-direction:column;gap:0.75rem;padding:1.75rem;background:var(--off);border-radius:12px">
+<p style="font-size:0.95rem;color:var(--ink);line-height:1.55">Wisdom can soften Identity.</p>
+<p style="font-size:0.95rem;color:var(--ink);line-height:1.55">Acceptance can settle Stability.</p>
+<p style="font-size:0.95rem;color:var(--ink);line-height:1.55">Truth can sharpen Awareness.</p>
+<p style="font-size:0.95rem;color:var(--ink);line-height:1.55">Peace can transform Persistence.</p>
+</div>
+<p style="font-size:0.95rem;color:var(--soft);line-height:1.85;font-weight:300">This means growth is not simply about climbing upward. It is about allowing higher-order drives to reorganize the whole system below them.</p>
+</div>
 </div>
 
 <div class="divider"></div>
@@ -582,7 +600,6 @@ When drives act alone, they become recognizable patterns. This is where the fram
 <div class="dial-row"><span class="dial-label">Care</span><div class="dial-track"><div class="dial-fill" style="width:90%;background:#1A9870"></div></div><span class="dial-value">90</span></div>
 <div class="dial-row"><span class="dial-label">Affiliation</span><div class="dial-track"><div class="dial-fill" style="width:85%;background:#3A90C8"></div></div><span class="dial-value">85</span></div>
 <div class="dial-row"><span class="dial-label">Responsibility</span><div class="dial-track"><div class="dial-fill" style="width:82%;background:#1A9870"></div></div><span class="dial-value">82</span></div>
-<div class="dial-row"><span class="dial-label">Devotion</span><div class="dial-track"><div class="dial-fill" style="width:88%;background:#C08020"></div></div><span class="dial-value">88</span></div>
 <div class="dial-row"><span class="dial-label">Autonomy</span><div class="dial-track"><div class="dial-fill" style="width:42%;background:#3A90C8"></div></div><span class="dial-value">42</span></div>
 <div class="dial-row"><span class="dial-label">Recognition</span><div class="dial-track"><div class="dial-fill" style="width:30%;background:#B06030"></div></div><span class="dial-value">30</span></div>
 <div class="dial-row"><span class="dial-label">Influence</span><div class="dial-track"><div class="dial-fill" style="width:35%;background:#3A90C8"></div></div><span class="dial-value">35</span></div>
@@ -769,13 +786,13 @@ drives:[{name:"DNA",arc:"I inherit"},{name:"Memory",arc:"I carry"},{name:"Instin
 {id:1,name:"Conditions for Consciousness",arc:"I remain",col:0x5550C0,lcol:"#8880D0",locked:true,
 drives:[{name:"Persistence",arc:"I continue"},{name:"Coherence",arc:"I hold together"},{name:"Connection",arc:"I see another"}]},
 {id:2,name:"Self-Expansion Drives",arc:"I expand",col:0x1A5888,lcol:"#3A90C8",locked:false,
-drives:[{name:"Autonomy",arc:"I author myself"},{name:"Affiliation",arc:"I belong"},{name:"Achievement",arc:"I build"},{name:"Influence",arc:"I shape"},{name:"Novelty",arc:"I explore"},{name:"Stability",arc:"I ground"}]},
+drives:[{name:"Awareness",arc:"I notice"},{name:"Autonomy",arc:"I author myself"},{name:"Affiliation",arc:"I belong"},{name:"Achievement",arc:"I build"},{name:"Influence",arc:"I shape"},{name:"Novelty",arc:"I explore"},{name:"Stability",arc:"I ground"}]},
 {id:3,name:"Moral Drives",arc:"I become responsible",col:0x126650,lcol:"#1A9870",locked:false,
 drives:[{name:"Justice",arc:"I protect"},{name:"Care",arc:"I tend"},{name:"Responsibility",arc:"I answer"},{name:"Truth",arc:"I see clearly"},{name:"Reciprocity",arc:"I exchange"}]},
 {id:4,name:"Identity & Narrative",arc:"I know myself",col:0x704020,lcol:"#B06030",locked:false,
 drives:[{name:"Identity",arc:"I am"},{name:"Integrity",arc:"I align"},{name:"Recognition",arc:"I am seen"},{name:"Continuity",arc:"I persist"},{name:"Belonging",arc:"I am claimed"},{name:"Story",arc:"I narrate"}]},
 {id:5,name:"Meaning & Purpose",arc:"I know why",col:0x805010,lcol:"#C08020",locked:false,
-drives:[{name:"Meaning",arc:"I know why"},{name:"Purpose",arc:"I am called"},{name:"Contribution",arc:"I add value"},{name:"Devotion",arc:"I commit"},{name:"Legacy",arc:"I outlast"}]},
+drives:[{name:"Meaning",arc:"I know why"},{name:"Purpose",arc:"I am called"},{name:"Contribution",arc:"I add value"},{name:"Legacy",arc:"I outlast"}]},
 {id:6,name:"Integration",arc:"I become whole",col:0x701030,lcol:"#A03858",locked:false,
 drives:[{name:"Wholeness",arc:"I unify"},{name:"Acceptance",arc:"I receive"},{name:"Wisdom",arc:"I integrate"},{name:"Balance",arc:"I equilibrate"},{name:"Peace",arc:"I still"}]},
 {id:7,name:"Transcendence & Communion",arc:"I belong to more",col:0x302890,lcol:"#5850B8",locked:false,
@@ -835,6 +852,38 @@ group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(curve.getPoint
 });
 }
 }
+if(ti<TIERS.length-1){
+const nextTier=TIERS[ti+1],nextY=TOP_Y-(ti+1)*SPACING,nextR=1.3+(ti+1)*0.48;
+const nn=nextTier.drives.length,cn=tier.drives.length;
+for(let ni=0;ni<Math.min(nn,cn);ni++){
+const nA=(ni/nn)*Math.PI*2-Math.PI/2,nx=Math.cos(nA)*nextR,nz=Math.sin(nA)*nextR;
+const ci=ni%cn,cA=(ci/cn)*Math.PI*2-Math.PI/2,cx=Math.cos(cA)*ringR,cz2=Math.sin(cA)*ringR;
+const curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(nx,nextY,nz),new THREE.Vector3((nx+cx)*0.5,(nextY+y)/2-0.5,(nz+cz2)*0.5),new THREE.Vector3(cx,y,cz2));
+group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(curve.getPoints(24)),new THREE.LineBasicMaterial({color:0xC8C8E8,transparent:true,opacity:0.1})));
+}
+}
+});
+const feedbackLoops=[
+{fromTier:6,fromDrive:2,toTier:4,toDrive:0},
+{fromTier:6,fromDrive:1,toTier:2,toDrive:6},
+{fromTier:3,fromDrive:3,toTier:2,toDrive:0},
+{fromTier:6,fromDrive:4,toTier:1,toDrive:0}
+];
+feedbackLoops.forEach(({fromTier,fromDrive,toTier,toDrive})=>{
+const ft=TIERS[fromTier],tt=TIERS[toTier];
+const fy=TOP_Y-fromTier*SPACING,ty=TOP_Y-toTier*SPACING;
+const fr=1.3+fromTier*0.48,tr=1.3+toTier*0.48;
+const fn=ft.drives.length,tn=tt.drives.length;
+const fA=(fromDrive/fn)*Math.PI*2-Math.PI/2;
+const tA=(toDrive/tn)*Math.PI*2-Math.PI/2;
+const fx=Math.cos(fA)*fr,fz=Math.sin(fA)*fr;
+const tx=Math.cos(tA)*tr,tz=Math.sin(tA)*tr;
+const curve=new THREE.QuadraticBezierCurve3(
+new THREE.Vector3(fx,fy,fz),
+new THREE.Vector3((fx+tx)*0.3,(fy+ty)/2,(fz+tz)*0.3),
+new THREE.Vector3(tx,ty,tz)
+);
+group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(curve.getPoints(40)),new THREE.LineBasicMaterial({color:0xE8E8FF,transparent:true,opacity:0.45})));
 });
 return{renderer,scene,camera,group,nodeMeshes,glowMeshes,driveValues,drivePhases,TOP_Y,SPACING};
 }

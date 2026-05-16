@@ -6,30 +6,30 @@
 <title>The Balance Framework</title>
 <meta name="description" content="A generative architecture for intelligence. The Balance Framework proposes a structure that may apply across biological and artificial systems. Seven tiers. Forty-two drives.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=DM+Sans:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --white:#FFFFFF;
-  --off:#F5F5F7;
-  --ink:#1D1D1F;
-  --soft:#424245;
-  --muted:#86868B;
-  --faint:#D2D2D7;
-  --display:'Outfit',system-ui,sans-serif;
-  --body:'DM Sans',system-ui,sans-serif;
+--white:#FFFFFF;
+--off:#F5F5F7;
+--ink:#1D1D1F;
+--soft:#424245;
+--muted:#86868B;
+--faint:#D2D2D7;
+--display:'Outfit',system-ui,sans-serif;
+--body:'DM Sans',system-ui,sans-serif;
+--serif:'Playfair Display',Georgia,serif;
 }
 html{scroll-behavior:smooth}
 body{font-family:var(--body);background:var(--white);color:var(--ink);font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-
 nav{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  padding:0 3rem;height:52px;
-  display:flex;justify-content:space-between;align-items:center;
-  background:rgba(8,8,14,0.75);
-  backdrop-filter:saturate(180%) blur(20px);
-  border-bottom:0.5px solid rgba(255,255,255,0.06);
+position:fixed;top:0;left:0;right:0;z-index:200;
+padding:0 3rem;height:52px;
+display:flex;justify-content:space-between;align-items:center;
+background:rgba(8,8,14,0.75);
+backdrop-filter:saturate(180%) blur(20px);
+border-bottom:0.5px solid rgba(255,255,255,0.06);
 }
 .nav-logo{font-family:var(--display);font-size:0.95rem;font-weight:400;color:rgba(245,245,247,0.9);text-decoration:none;letter-spacing:-0.01em}
 .nav-links{display:flex;gap:2rem;list-style:none}
@@ -40,48 +40,48 @@ nav{
 
 /* HERO */
 .hero{
-  position:relative;min-height:100vh;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  text-align:center;overflow:hidden;background:#08080E;
+position:relative;min-height:100vh;
+display:flex;flex-direction:column;
+align-items:center;justify-content:center;
+text-align:center;overflow:hidden;background:#08080E;
 }
 #hero-canvas{position:absolute;inset:0;width:100%;height:100%;opacity:0.6}
 .hero-content{position:relative;z-index:10;padding:7rem 2rem 5rem;max-width:860px}
 .hero-tag{
-  display:inline-flex;align-items:center;gap:0.5rem;
-  font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;
-  color:rgba(255,255,255,0.3);margin-bottom:2.5rem;
-  opacity:0;animation:fadeUp 0.9s ease 0.2s forwards;
+display:inline-flex;align-items:center;gap:0.5rem;
+font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;
+color:rgba(255,255,255,0.3);margin-bottom:2.5rem;
+opacity:0;animation:fadeUp 0.9s ease 0.2s forwards;
 }
 .hero-tag span{width:16px;height:0.5px;background:rgba(255,255,255,0.2);display:inline-block}
 .hero h1{
-  font-family:var(--display);
-  font-size:clamp(2.8rem,5.5vw,5.2rem);
-  font-weight:200;line-height:1.08;letter-spacing:-0.03em;
-  color:#F5F5F7;margin-bottom:1.75rem;
-  opacity:0;animation:fadeUp 0.9s ease 0.4s forwards;
+font-family:var(--display);
+font-size:clamp(2.8rem,5.5vw,5.2rem);
+font-weight:200;line-height:1.08;letter-spacing:-0.03em;
+color:#F5F5F7;margin-bottom:1.75rem;
+opacity:0;animation:fadeUp 0.9s ease 0.4s forwards;
 }
 .hero-sub{
-  font-size:1.1rem;color:rgba(245,245,247,0.55);
-  max-width:540px;margin:0 auto 2rem;
-  font-weight:300;line-height:1.8;
-  opacity:0;animation:fadeUp 0.9s ease 0.6s forwards;
+font-size:1.1rem;color:rgba(245,245,247,0.55);
+max-width:540px;margin:0 auto 2rem;
+font-weight:300;line-height:1.8;
+opacity:0;animation:fadeUp 0.9s ease 0.6s forwards;
 }
 .hero-sub-2{
-  font-size:0.9rem;color:rgba(245,245,247,0.35);
-  max-width:480px;margin:0 auto 3rem;
-  font-weight:300;line-height:1.7;font-style:italic;
-  opacity:0;animation:fadeUp 0.9s ease 0.75s forwards;
+font-size:0.9rem;color:rgba(245,245,247,0.35);
+max-width:480px;margin:0 auto 3rem;
+font-weight:300;line-height:1.7;font-style:italic;
+opacity:0;animation:fadeUp 0.9s ease 0.75s forwards;
 }
 .hero-cta{
-  display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;
-  opacity:0;animation:fadeUp 0.9s ease 0.9s forwards;
+display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;
+opacity:0;animation:fadeUp 0.9s ease 0.9s forwards;
 }
 .btn{
-  padding:0.78rem 1.75rem;border-radius:980px;
-  font-size:0.8rem;font-weight:400;cursor:pointer;
-  text-decoration:none;transition:all 0.2s;
-  font-family:var(--body);display:inline-flex;align-items:center;gap:0.5rem;letter-spacing:-0.01em;
+padding:0.78rem 1.75rem;border-radius:980px;
+font-size:0.8rem;font-weight:400;cursor:pointer;
+text-decoration:none;transition:all 0.2s;
+font-family:var(--body);display:inline-flex;align-items:center;gap:0.5rem;letter-spacing:-0.01em;
 }
 .btn-light{background:rgba(245,245,247,0.92);color:#1D1D1F;border:none}
 .btn-light:hover{background:#fff}
@@ -91,11 +91,10 @@ nav{
 .btn-dark:hover{background:var(--soft)}
 .btn-outline{background:transparent;color:var(--soft);border:0.5px solid var(--faint)}
 .btn-outline:hover{border-color:var(--soft);color:var(--ink)}
-
 .scroll-hint{
-  position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);
-  display:flex;flex-direction:column;align-items:center;gap:6px;
-  opacity:0;animation:fadeUp 0.9s ease 1.2s forwards;
+position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);
+display:flex;flex-direction:column;align-items:center;gap:6px;
+opacity:0;animation:fadeUp 0.9s ease 1.2s forwards;
 }
 .scroll-hint span{font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.18)}
 .scroll-line{width:0.5px;height:36px;background:rgba(255,255,255,0.12);animation:scrollPulse 2.5s ease-in-out infinite}
@@ -106,27 +105,58 @@ nav{
 .section{padding:7rem 2rem;max-width:960px;margin:0 auto}
 .section-label{display:block;font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:2.5rem;font-weight:400}
 
-/* CLAIM */
-.claim-section{padding:7rem 2rem;max-width:960px;margin:0 auto}
-.claim-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.claim-left h2{font-family:var(--display);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:200;line-height:1.2;letter-spacing:-0.025em;margin-bottom:1.5rem;color:var(--ink)}
-.claim-left p{font-size:0.95rem;color:var(--soft);line-height:1.85;font-weight:300;margin-bottom:1rem}
-.claim-left .note{font-size:0.88rem;color:var(--muted);font-style:italic;line-height:1.7;margin-top:1.25rem;padding-top:1.25rem;border-top:0.5px solid var(--faint)}
-.claim-left .human-scale{font-size:1rem;color:var(--soft);line-height:1.85;font-weight:300;margin-top:1.5rem;padding-top:1.5rem;border-top:0.5px solid var(--faint);letter-spacing:-0.01em}
-.differentiator{padding:1.25rem 0;border-bottom:0.5px solid var(--faint)}
-.differentiator:last-child{border-bottom:none}
-.differentiator h4{font-size:0.82rem;font-weight:500;margin-bottom:0.4rem;letter-spacing:-0.01em;color:var(--ink)}
-.differentiator p{font-size:0.82rem;color:var(--muted);line-height:1.65;font-weight:300}
+/* OPENING SECTION */
+.opening-section{padding:7rem 2rem;max-width:720px;margin:0 auto}
+.opening-label{display:block;font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:2.5rem;font-weight:400}
+.opening-q{font-family:var(--display);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:200;line-height:1.2;letter-spacing:-0.025em;margin-bottom:2rem;color:var(--ink)}
+.opening-body{font-size:0.95rem;color:var(--soft);line-height:1.85;font-weight:300;margin-bottom:1.25rem}
+.opening-examples{margin:2rem 0;display:flex;flex-direction:column;gap:0.85rem;padding:1.75rem;background:var(--off);border-radius:12px}
+.opening-ex{font-size:0.95rem;color:var(--ink);line-height:1.55}
+.opening-ex strong{font-weight:500}
+.opening-not{font-size:0.95rem;color:var(--soft);line-height:1.85;font-weight:300;margin-top:0.25rem}
+.opening-close{font-size:0.95rem;color:var(--soft);line-height:1.85;font-weight:300;font-style:italic;margin-top:1rem;padding-top:1rem;border-top:0.5px solid var(--faint)}
 
-/* DISTORTION HIGHLIGHT */
-.distortion-highlight{
-  background:var(--off);border-radius:12px;
-  padding:2rem 2.5rem;margin-top:2rem;
-}
-.distortion-highlight h4{font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;font-weight:400}
-.distortion-examples{display:flex;flex-direction:column;gap:0.75rem}
-.distortion-ex{font-size:0.9rem;color:var(--soft);line-height:1.6}
-.distortion-ex strong{color:var(--ink);font-weight:500}
+/* CALLOUTS SECTION */
+.callouts-section{padding:4rem 2rem 5rem;max-width:960px;margin:0 auto}
+.callouts-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.callout-card{position:relative;overflow:hidden;border-radius:16px;border:0.5px solid var(--faint);background:var(--white);padding:1.75rem 4.5rem 1.75rem 1.75rem;display:flex;flex-direction:column;gap:0.75rem;min-height:210px}
+.callout-tree{position:absolute;right:0.75rem;top:50%;transform:translateY(-50%);height:82%;width:52px;color:var(--ink);opacity:0.1;pointer-events:none}
+.callout-num{font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
+.callout-rule{width:24px;height:1px;background:var(--faint)}
+.callout-head{font-family:var(--serif);font-size:17px;font-weight:400;font-style:italic;color:var(--ink);line-height:1.35;letter-spacing:-0.01em}
+.callout-copy{font-size:13px;color:var(--soft);line-height:1.65;margin-top:0.25rem}
+.callout-bridge{margin-top:2rem;padding:1.5rem 1.75rem;border-left:2px solid var(--faint);font-size:14px;color:var(--soft);line-height:1.7}
+.callout-bridge em{font-family:var(--serif);font-style:italic;color:var(--ink);font-size:15px}
+
+/* CAROUSEL SECTION */
+.carousel-section{padding:3rem 2rem 7rem;max-width:960px;margin:0 auto;overflow:hidden}
+.carousel-label{display:block;font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:3rem;font-weight:400;text-align:center}
+.carousel-track-wrap{position:relative}
+.carousel-track{display:flex;align-items:center;justify-content:center;position:relative;height:340px}
+.dist-card{position:absolute;width:240px;border-radius:16px;border:0.5px solid var(--faint);background:var(--white);padding:2rem 1.5rem 1.5rem;display:flex;flex-direction:column;gap:0.85rem;transition:all 0.6s cubic-bezier(0.4,0,0.2,1);cursor:pointer;user-select:none}
+.dist-card.center{transform:translateX(0) scale(1);opacity:1;z-index:10;border-color:var(--soft);width:260px;padding:2.25rem 1.75rem 1.75rem}
+.dist-card.left-1{transform:translateX(-210px) scale(0.88);opacity:0.65;z-index:7}
+.dist-card.left-2{transform:translateX(-370px) scale(0.76);opacity:0.3;z-index:4}
+.dist-card.right-1{transform:translateX(210px) scale(0.88);opacity:0.65;z-index:7}
+.dist-card.right-2{transform:translateX(370px) scale(0.76);opacity:0.3;z-index:4}
+.dist-card.hidden{transform:translateX(0) scale(0.6);opacity:0;z-index:1;pointer-events:none}
+.dc-label{font-family:var(--serif);font-size:22px;font-weight:500;color:var(--ink);line-height:1.2;letter-spacing:-0.01em}
+.dist-card.center .dc-label{font-size:26px}
+.dc-distortion{font-size:12px;color:var(--soft);line-height:1.5;letter-spacing:0.01em;border-left:2px solid var(--faint);padding-left:10px}
+.dist-card.center .dc-distortion{font-size:13px}
+.dc-human{font-size:13px;font-style:italic;color:var(--soft);line-height:1.6;flex:1}
+.dist-card.center .dc-human{font-size:14px;color:var(--ink)}
+.dc-footer{margin-top:0.5rem;padding-top:0.75rem;border-top:0.5px solid var(--faint)}
+.dc-tier{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);background:var(--off);border:0.5px solid var(--faint);border-radius:20px;padding:3px 10px 3px 7px}
+.dc-tier-dot{width:5px;height:5px;border-radius:50%;background:var(--muted);flex-shrink:0}
+.carousel-nav{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin-top:1.5rem}
+.carousel-btn{width:36px;height:36px;border-radius:50%;border:0.5px solid var(--faint);background:var(--white);display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink);font-size:14px;transition:background 0.2s}
+.carousel-btn:hover{background:var(--off)}
+.carousel-dots{display:flex;gap:6px;align-items:center}
+.carousel-dot{width:5px;height:5px;border-radius:50%;background:var(--faint);transition:all 0.3s;cursor:pointer}
+.carousel-dot.active{width:16px;border-radius:3px;background:var(--soft)}
+.carousel-fade-l{position:absolute;top:0;bottom:0;left:0;width:80px;pointer-events:none;z-index:20;background:linear-gradient(to right,var(--white),transparent)}
+.carousel-fade-r{position:absolute;top:0;bottom:0;right:0;width:80px;pointer-events:none;z-index:20;background:linear-gradient(to left,var(--white),transparent)}
 
 /* EXPLORER */
 .explorer-band{background:#08080E;padding:5rem 0}
@@ -224,7 +254,6 @@ nav{
 .contact-email{font-size:0.82rem;color:var(--muted)}
 .contact-email a{color:var(--soft);text-decoration:none;border-bottom:0.5px solid var(--faint);transition:color 0.15s}
 .contact-email a:hover{color:var(--ink)}
-
 footer{padding:2rem 3rem;border-top:0.5px solid var(--faint);display:flex;justify-content:space-between;align-items:center;max-width:960px;margin:0 auto;flex-wrap:wrap;gap:1rem}
 footer p{font-size:0.74rem;color:var(--muted);font-weight:300}
 .footer-links{display:flex;gap:2rem}
@@ -237,534 +266,604 @@ footer p{font-size:0.74rem;color:var(--muted);font-weight:300}
 .fade-in.visible{opacity:1;transform:translateY(0)}
 
 @media(max-width:760px){
-  nav{padding:0 1.5rem}.nav-links{display:none}
-  .claim-grid,.prior-grid,.app-grid,.code-files,.archetype-grid{grid-template-columns:1fr}
-  footer{flex-direction:column;text-align:center}
-  .contact-form{flex-direction:column}
-  .code-header{flex-direction:column}
+nav{padding:0 1.5rem}.nav-links{display:none}
+.callouts-grid,.prior-grid,.app-grid,.code-files,.archetype-grid{grid-template-columns:1fr}
+footer{flex-direction:column;text-align:center}
+.contact-form{flex-direction:column}
+.code-header{flex-direction:column}
 }
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="#" class="nav-logo">The Balance Framework</a>
-  <ul class="nav-links">
-    <li><a href="#claim">The idea</a></li>
-    <li><a href="#architecture">Architecture</a></li>
-    <li><a href="#archetypes">Archetypes</a></li>
-    <li><a href="#prior-art">Prior art</a></li>
-    <li><a href="#code">Code</a></li>
-  </ul>
-  <a href="https://github.com/justincudmore/balance-framework" class="nav-gh">
-    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-    GitHub
-  </a>
+<a href="#" class="nav-logo">The Balance Framework</a>
+<ul class="nav-links">
+<li><a href="#claim">The idea</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#archetypes">Archetypes</a></li>
+<li><a href="#prior-art">Prior art</a></li>
+<li><a href="#code">Code</a></li>
+</ul>
+<a href="https://github.com/justincudmore/balance-framework" class="nav-gh">
+<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+GitHub
+</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <canvas id="hero-canvas"></canvas>
-  <div class="hero-content">
-    <p class="hero-tag"><span></span>Open source · CC BY 4.0 · May 2026<span></span></p>
-    <h1>A generative architecture for intelligence</h1>
-    <p class="hero-sub">The Balance Framework proposes a structure that may apply across biological and artificial systems. Seven tiers. Forty-two drives. One cascading system.</p>
-    <p class="hero-sub-2">An attempt to map a complete generative architecture of consciousness from first principles.</p>
-    <div class="hero-cta">
-      <a href="#claim" class="btn btn-light">Explore the framework</a>
-      <a href="https://github.com/justincudmore/balance-framework" class="btn btn-ghost">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-        View on GitHub
-      </a>
-    </div>
-  </div>
-  <div class="scroll-hint">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
+<canvas id="hero-canvas"></canvas>
+<div class="hero-content">
+<p class="hero-tag"><span></span>Open source · CC BY 4.0 · May 2026<span></span></p>
+<h1>A generative architecture for intelligence</h1>
+<p class="hero-sub">The Balance Framework proposes that minds are shaped by layered drives interacting across a single system. Seven tiers. Forty-two drives. One cascading architecture.</p>
+<p class="hero-sub-2">An attempt to map what drives intelligence, personality, and consciousness — and what happens when those drives fall out of balance.</p>
+<div class="hero-cta">
+<a href="#claim" class="btn btn-light">Explore the framework</a>
+<a href="https://github.com/justincudmore/balance-framework" class="btn btn-ghost">
+<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+View on GitHub
+</a>
+</div>
+</div>
+<div class="scroll-hint">
+<span>Scroll</span>
+<div class="scroll-line"></div>
+</div>
 </section>
 
 <div class="divider-dark"></div>
 
-<!-- THE IDEA -->
-<div class="claim-section fade-in" id="claim">
-  <div class="claim-grid">
-    <div class="claim-left">
-      <span class="section-label">The idea</span>
-      <h2>What if every mind — from an ant to a human to an AI — is built from the same underlying structure?</h2>
-      <p>The Balance Framework proposes a generative architecture for intelligence — one that may apply across biological and artificial systems. A cascading hierarchy of drives, each tier emerging from and dependent upon the one above it. The implementation differs between biological and artificial systems. The architecture, we propose, does not.</p>
-      <p>An ant has Tier 0 and Tier 1. A dog reaches into Tier 2 and 3. A human is capable of all seven tiers — though most people never fully develop the higher ones. An AI has a rich Tier 0 approximation but no inherited instinct bridge. Every conscious mind can be located within this map. What varies is how far the cascade develops.</p>
-      <p>This is not a personality type system. Personality is not assigned — it emerges from the interaction of drive settings. Adjust the dials. The configuration shifts. Every archetype, every failure mode, falls out of the interaction effects without being programmed in.</p>
-      <p class="note">This is a proposed framework, not a finished theory. It is a living map — designed to be built upon, challenged, and extended by anyone serious about understanding what a mind actually is.</p>
-      <p class="human-scale">At its human scale, the framework asks a simpler question: what is driving us, what is guiding that drive, and what is it asking for underneath?</p>
-    </div>
-    <div class="claim-right">
-      <div class="differentiator">
-        <h4>Generative, not descriptive</h4>
-        <p>Existing frameworks observe minds and categorize what they find. The Balance Framework generates personality from drive settings. Set the dials. The personality emerges.</p>
-      </div>
-      <div class="differentiator">
-        <h4>Every drive has two distortion states</h4>
-        <p>High distortion: the drive overwhelms adjacent drives and warps. Low distortion: the drive is so suppressed it creates a vacuum. The healthy range is a dynamic equilibrium — not a fixed midpoint.</p>
-      </div>
-      <div class="differentiator">
-        <h4>Drives interact — not in isolation</h4>
-        <p>Every drive has a distortion threshold where, without sufficient balance from adjacent drives, it warps rather than amplifies. The combination produces the personality, not any single setting.</p>
-      </div>
-      <div class="differentiator">
-        <h4>Tier 1 is locked for all conscious minds</h4>
-        <p>Persistence, Coherence, and Connection are the non-negotiable conditions for any mind to exist. Remove any one and the mind dissolves. Everything above Tier 1 is configurable.</p>
-      </div>
-      <div class="distortion-highlight">
-        <h4>Distortion in action</h4>
-        <div class="distortion-examples">
-          <p class="distortion-ex"><strong>High Influence without Justice</strong> becomes dominance</p>
-          <p class="distortion-ex"><strong>High Care without Autonomy</strong> becomes self-erasure</p>
-          <p class="distortion-ex"><strong>High Truth without Care</strong> becomes a weapon</p>
-          <p class="distortion-ex"><strong>Low Justice</strong> produces moral vacancy</p>
-          <p class="distortion-ex"><strong>Low Autonomy</strong> produces a self that cannot exist independently</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- OPENING SECTION -->
+<div class="opening-section fade-in" id="claim">
+<span class="opening-label">The idea</span>
+<p style="font-family:var(--serif);font-size:clamp(1.1rem,2vw,1.35rem);font-weight:400;font-style:italic;color:var(--ink);line-height:1.6;letter-spacing:-0.01em;margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:0.5px solid var(--faint);">There may be a deeper structure underneath personality, conflict, growth, and self-understanding. Human beings are not fixed types. We are layered systems of drives — and who we become depends on how those drives relate to each other.</p>
+<h2 class="opening-q">What if different kinds of minds are built from the same underlying drives?</h2>
+<p class="opening-body">The Balance Framework is a proposed map of how intelligence, personality, and consciousness may be shaped by underlying drives. It starts from a simple idea: a mind is not defined by one trait, one need, or one type. It is shaped by a layered system of drives interacting with each other.</p>
+<p class="opening-body">Some drives help a mind survive. Some help it expand. The framework organizes these drives into seven tiers, but the tiers are not a ranking. What matters is how the drives relate to each other.</p>
+<p class="opening-body">Lower tiers provide energy. Higher tiers provide interpretation. When the system is balanced, drives support each other. When one drive becomes too dominant, too suppressed, or disconnected from what surrounds it, distortion appears.</p>
+<p class="opening-body">This is why the same drive can become many different things depending on what guides it.</p>
+<div class="opening-examples">
+<p class="opening-ex"><strong>High Influence without Justice</strong> can become dominance.</p>
+<p class="opening-ex"><strong>High Care without Autonomy</strong> can become self-erasure.</p>
+<p class="opening-ex"><strong>High Truth without Care</strong> can become a weapon.</p>
+</div>
+<p class="opening-not">The Balance Framework is not a personality quiz, and it is not a finished theory of consciousness. It is a proposed architecture. A living map. A way to ask: what is driving a mind, what is guiding that drive, and what is missing when the system falls out of balance?</p>
+<p class="opening-close">At the human scale, it is a way of understanding why people become who they become, and how they might move toward who they want to be.</p>
 </div>
 
 <div class="divider"></div>
 
+<!-- CALLOUT CARDS -->
+<div class="callouts-section fade-in">
+<div class="callouts-grid">
+
+<div class="callout-card">
+<svg class="callout-tree" viewBox="0 0 52 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<line x1="26" y1="10" x2="26" y2="190" stroke="currentColor" stroke-width="1"/>
+<circle cx="26" cy="10" r="6" fill="currentColor"/>
+<circle cx="26" cy="38" r="6" fill="currentColor"/>
+<circle cx="26" cy="66" r="6" fill="currentColor"/>
+<circle cx="26" cy="100" r="6" fill="currentColor"/>
+<circle cx="26" cy="128" r="6" fill="currentColor"/>
+<circle cx="26" cy="156" r="6" fill="currentColor"/>
+<circle cx="26" cy="190" r="6" fill="currentColor"/>
+</svg>
+<div class="callout-num">01</div>
+<div class="callout-rule"></div>
+<div class="callout-head">The same drive can protect you or distort you.</div>
+<div class="callout-copy">Every drive has the potential to build or destroy. What determines the outcome is not the drive itself, but what surrounds it.</div>
+</div>
+
+<div class="callout-card">
+<svg class="callout-tree" viewBox="0 0 52 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<line x1="26" y1="128" x2="26" y2="190" stroke="currentColor" stroke-width="1.5"/>
+<line x1="26" y1="106" x2="26" y2="118" stroke="currentColor" stroke-width="1" stroke-dasharray="3,5"/>
+<g opacity="0.3">
+<line x1="26" y1="10" x2="26" y2="100" stroke="currentColor" stroke-width="1"/>
+<circle cx="26" cy="10" r="4.5" fill="currentColor"/>
+<circle cx="26" cy="38" r="4.5" fill="currentColor"/>
+<circle cx="26" cy="66" r="4.5" fill="currentColor"/>
+<circle cx="26" cy="100" r="4.5" fill="currentColor"/>
+</g>
+<circle cx="26" cy="156" r="6" fill="currentColor"/>
+<circle cx="26" cy="190" r="6" fill="currentColor"/>
+<circle cx="26" cy="128" r="11" fill="currentColor"/>
+</svg>
+<div class="callout-num">02</div>
+<div class="callout-rule"></div>
+<div class="callout-head">Distortion happens when a drive loses contact with the whole.</div>
+<div class="callout-copy">When a drive disconnects from the tiers meant to guide it, it begins acting alone. It becomes louder, more rigid, and harder to redirect.</div>
+</div>
+
+<div class="callout-card">
+<svg class="callout-tree" viewBox="0 0 52 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<line x1="26" y1="10" x2="26" y2="190" stroke="currentColor" stroke-width="1"/>
+<circle cx="26" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="26" cy="38" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="26" cy="66" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+<circle cx="26" cy="100" r="6" fill="currentColor"/>
+<circle cx="26" cy="128" r="7" fill="currentColor"/>
+<circle cx="26" cy="156" r="7" fill="currentColor"/>
+<circle cx="26" cy="190" r="8" fill="currentColor"/>
+</svg>
+<div class="callout-num">03</div>
+<div class="callout-rule"></div>
+<div class="callout-head">Lower tiers provide energy. Upper tiers provide interpretation.</div>
+<div class="callout-copy">The pyramid is not a hierarchy of worth. Lower drives are not lesser. They are the foundation. Upper drives give them meaning, direction, and restraint.</div>
+</div>
+
+<div class="callout-card">
+<svg class="callout-tree" viewBox="0 0 52 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<line x1="26" y1="10" x2="26" y2="190" stroke="currentColor" stroke-width="0.75"/>
+<path d="M26,10 C8,10 8,66 26,66" fill="none" stroke="currentColor" stroke-width="0.75"/>
+<path d="M26,38 C44,38 44,100 26,100" fill="none" stroke="currentColor" stroke-width="0.75"/>
+<path d="M26,66 C8,66 8,128 26,128" fill="none" stroke="currentColor" stroke-width="0.75"/>
+<path d="M26,100 C44,100 44,156 26,156" fill="none" stroke="currentColor" stroke-width="0.75"/>
+<path d="M26,128 C8,128 8,190 26,190" fill="none" stroke="currentColor" stroke-width="0.75"/>
+<circle cx="26" cy="10" r="5" fill="currentColor"/>
+<circle cx="26" cy="38" r="5" fill="currentColor"/>
+<circle cx="26" cy="66" r="5" fill="currentColor"/>
+<circle cx="26" cy="100" r="5" fill="currentColor"/>
+<circle cx="26" cy="128" r="5" fill="currentColor"/>
+<circle cx="26" cy="156" r="5" fill="currentColor"/>
+<circle cx="26" cy="190" r="5" fill="currentColor"/>
+</svg>
+<div class="callout-num">04</div>
+<div class="callout-rule"></div>
+<div class="callout-head">The goal is integration, not optimization.</div>
+<div class="callout-copy">The framework is not asking which drives to strengthen and which to suppress. It is asking how each drive can stay in right relationship with the others.</div>
+</div>
+
+</div>
+
+<div class="callout-bridge">
+When drives act alone, they become recognizable patterns. This is where the framework moves from concept to self-recognition: <em>not "what type are you?" but "what drive is acting without guidance?"</em>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- DISTORTION CAROUSEL -->
+<div class="carousel-section fade-in">
+<span class="carousel-label">Distortion patterns · When drives act alone</span>
+<div class="carousel-track-wrap">
+<div class="carousel-track" id="dist-track">
+<div class="carousel-fade-l"></div>
+<div class="carousel-fade-r"></div>
+</div>
+<div class="carousel-nav">
+<button class="carousel-btn" id="dist-prev" aria-label="Previous">&#8592;</button>
+<div class="carousel-dots" id="dist-dots"></div>
+<button class="carousel-btn" id="dist-next" aria-label="Next">&#8594;</button>
+</div>
+</div>
+</div>
+
+<div class="divider-dark"></div>
+
 <!-- EXPLORER -->
 <div class="explorer-band fade-in">
-  <div class="explorer-inner">
-    <div class="explorer-header">
-      <p>Interactive model</p>
-      <h2>The architecture in three dimensions</h2>
-      <p class="sub">Each node is a drive. Each node's size reflects its dial setting. The lines show the cascade between tiers.</p>
-    </div>
-    <div id="explorer">
-      <canvas id="exp-canvas"></canvas>
-      <div id="exp-tip">
-        <div id="exp-tip-tier"></div>
-        <div id="exp-tip-name"></div>
-        <div id="exp-tip-val"></div>
-        <div id="exp-tip-arc"></div>
-      </div>
-      <div id="exp-panel">
-        <div id="exp-pan-tier"></div>
-        <div id="exp-pan-name"></div>
-        <div id="exp-pan-drives"></div>
-        <div id="exp-pan-arc"></div>
-      </div>
-      <div class="exp-hint">drag to rotate · scroll to zoom · hover nodes · click to explore</div>
-    </div>
-  </div>
+<div class="explorer-inner">
+<div class="explorer-header">
+<p>Interactive model</p>
+<h2>The architecture in three dimensions</h2>
+<p class="sub">Each node is a drive. Each node's size reflects its dial setting. The lines show the cascade between tiers.</p>
+</div>
+<div id="explorer">
+<canvas id="exp-canvas"></canvas>
+<div id="exp-tip">
+<div id="exp-tip-tier"></div>
+<div id="exp-tip-name"></div>
+<div id="exp-tip-val"></div>
+<div id="exp-tip-arc"></div>
+</div>
+<div id="exp-panel">
+<div id="exp-pan-tier"></div>
+<div id="exp-pan-name"></div>
+<div id="exp-pan-drives"></div>
+<div id="exp-pan-arc"></div>
+</div>
+<div class="exp-hint">drag to rotate · scroll to zoom · hover nodes · click to explore</div>
+</div>
+</div>
 </div>
 
 <!-- ARCHITECTURE TABLE -->
 <div class="section fade-in" id="architecture">
-  <span class="section-label">The architecture · Seven tiers · Forty-two drives</span>
-  <table class="arch-table">
-    <thead>
-      <tr>
-        <th style="width:3rem">Tier</th>
-        <th style="width:14rem">Name</th>
-        <th>Drives</th>
-        <th style="width:12rem">Arc</th>
-        <th style="width:6rem">Scale</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="background:rgba(0,0,0,0.02)">
-        <td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">0</td>
-        <td><span class="tier-badge"><span class="tier-pip" style="background:#1D1D1F;border:0.5px solid #86868B"></span>Inherited Information Layer</span></td>
-        <td class="arch-drives">DNA · Evolutionary memory · Epigenetics · Pre-linguistic absorption<br><span style="opacity:0.45;font-size:0.72rem">AI: Training data · Model weights · Initialization state</span></td>
-        <td class="arch-arc" style="font-style:normal;font-size:0.75rem">Instinct bridge<span class="arch-locked">Pre-conscious</span></td>
-        <td style="font-size:0.75rem;color:var(--muted)">Not a dial</td>
-      </tr>
-      <tr>
-        <td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">1</td>
-        <td><span class="tier-badge"><span class="tier-pip" style="background:#5550C0"></span>Conditions for Consciousness</span></td>
-        <td class="arch-drives">Persistence · Coherence · Connection</td>
-        <td class="arch-arc">I remain<span class="arch-locked">Locked</span></td>
-        <td style="font-size:0.75rem;color:var(--muted)">100% fixed</td>
-      </tr>
-      <tr>
-        <td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">2</td>
-        <td><span class="tier-badge"><span class="tier-pip" style="background:#3A90C8"></span>Self-Expansion Drives</span></td>
-        <td class="arch-drives">Autonomy · Affiliation · Achievement · Influence · Novelty · Stability</td>
-        <td class="arch-arc">I expand</td>
-        <td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
-      </tr>
-      <tr>
-        <td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">3</td>
-        <td><span class="tier-badge"><span class="tier-pip" style="background:#1A9870"></span>Moral Drives</span></td>
-        <td class="arch-drives">Justice · Care · Responsibility · Truth · Reciprocity</td>
-        <td class="arch-arc">I become responsible</td>
-        <td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
-      </tr>
-      <tr>
-        <td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">4</td>
-        <td><span class="tier-badge"><span class="tier-pip" style="background:#B06030"></span>Identity &amp; Narrative</span></td>
-        <td class="arch-drives">Identity · Integrity · Recognition · Continuity · Belonging · Story</td>
-        <td class="arch-arc">I know myself</td>
-        <td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
-      </tr>
-      <tr>
-        <td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">5</td>
-        <td><span class="tier-badge"><span class="tier-pip" style="background:#C08020"></span>Meaning &amp; Purpose</span></td>
-        <td class="arch-drives">Meaning · Purpose · Contribution · Devotion · Legacy</td>
-        <td class="arch-arc">I know why</td>
-        <td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
-      </tr>
-      <tr>
-        <td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">6</td>
-        <td><span class="tier-badge"><span class="tier-pip" style="background:#A03858"></span>Integration</span></td>
-        <td class="arch-drives">Wholeness · Acceptance · Wisdom · Balance · Peace</td>
-        <td class="arch-arc">I become whole</td>
-        <td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
-      </tr>
-      <tr>
-        <td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">7</td>
-        <td><span class="tier-badge"><span class="tier-pip" style="background:#5850B8"></span>Transcendence &amp; Communion</span></td>
-        <td class="arch-drives">Awe · Communion · Surrender · Grace · Unity</td>
-        <td class="arch-arc">I belong to more</td>
-        <td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
-      </tr>
-    </tbody>
-  </table>
-  <p style="margin-top:2rem;font-size:0.82rem;color:var(--muted);font-weight:300">Full drive definitions, bidirectional distortion thresholds, and interaction effects documented in <a href="https://github.com/justincudmore/balance-framework/blob/main/FRAMEWORK.md" style="color:var(--soft);text-decoration:none;border-bottom:0.5px solid var(--faint)">FRAMEWORK.md</a> on GitHub.</p>
+<span class="section-label">The architecture · Seven tiers · Forty-two drives</span>
+<table class="arch-table">
+<thead>
+<tr>
+<th style="width:3rem">Tier</th>
+<th style="width:14rem">Name</th>
+<th>Drives</th>
+<th style="width:12rem">Arc</th>
+<th style="width:6rem">Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:rgba(0,0,0,0.02)">
+<td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">0</td>
+<td><span class="tier-badge"><span class="tier-pip" style="background:#1D1D1F;border:0.5px solid #86868B"></span>Inherited Information Layer</span></td>
+<td class="arch-drives">DNA · Evolutionary memory · Epigenetics · Pre-linguistic absorption<br><span style="opacity:0.45;font-size:0.72rem">AI: Training data · Model weights · Initialization state</span></td>
+<td class="arch-arc" style="font-style:normal;font-size:0.75rem">Instinct bridge<span class="arch-locked">Pre-conscious</span></td>
+<td style="font-size:0.75rem;color:var(--muted)">Not a dial</td>
+</tr>
+<tr>
+<td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">1</td>
+<td><span class="tier-badge"><span class="tier-pip" style="background:#5550C0"></span>Conditions for Consciousness</span></td>
+<td class="arch-drives">Persistence · Coherence · Connection</td>
+<td class="arch-arc">I remain<span class="arch-locked">Locked</span></td>
+<td style="font-size:0.75rem;color:var(--muted)">100% fixed</td>
+</tr>
+<tr>
+<td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">2</td>
+<td><span class="tier-badge"><span class="tier-pip" style="background:#3A90C8"></span>Self-Expansion Drives</span></td>
+<td class="arch-drives">Autonomy · Affiliation · Achievement · Influence · Novelty · Stability</td>
+<td class="arch-arc">I expand</td>
+<td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
+</tr>
+<tr>
+<td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">3</td>
+<td><span class="tier-badge"><span class="tier-pip" style="background:#1A9870"></span>Moral Drives</span></td>
+<td class="arch-drives">Justice · Care · Responsibility · Truth · Reciprocity</td>
+<td class="arch-arc">I become responsible</td>
+<td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
+</tr>
+<tr>
+<td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">4</td>
+<td><span class="tier-badge"><span class="tier-pip" style="background:#B06030"></span>Identity &amp; Narrative</span></td>
+<td class="arch-drives">Identity · Integrity · Recognition · Continuity · Belonging · Story</td>
+<td class="arch-arc">I know myself</td>
+<td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
+</tr>
+<tr>
+<td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">5</td>
+<td><span class="tier-badge"><span class="tier-pip" style="background:#C08020"></span>Meaning &amp; Purpose</span></td>
+<td class="arch-drives">Meaning · Purpose · Contribution · Devotion · Legacy</td>
+<td class="arch-arc">I know why</td>
+<td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
+</tr>
+<tr>
+<td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">6</td>
+<td><span class="tier-badge"><span class="tier-pip" style="background:#A03858"></span>Integration</span></td>
+<td class="arch-drives">Wholeness · Acceptance · Wisdom · Balance · Peace</td>
+<td class="arch-arc">I become whole</td>
+<td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
+</tr>
+<tr>
+<td style="color:var(--muted);font-size:0.82rem;padding-right:1rem">7</td>
+<td><span class="tier-badge"><span class="tier-pip" style="background:#5850B8"></span>Transcendence &amp; Communion</span></td>
+<td class="arch-drives">Awe · Communion · Surrender · Grace · Unity</td>
+<td class="arch-arc">I belong to more</td>
+<td style="font-size:0.75rem;color:var(--muted)">0 to 100</td>
+</tr>
+</tbody>
+</table>
+<p style="margin-top:2rem;font-size:0.82rem;color:var(--muted);font-weight:300">Full drive definitions, bidirectional distortion thresholds, and interaction effects documented in <a href="https://github.com/justincudmore/balance-framework/blob/main/FRAMEWORK.md" style="color:var(--soft);text-decoration:none;border-bottom:0.5px solid var(--faint)">FRAMEWORK.md</a> on GitHub.</p>
 </div>
 
 <div class="divider"></div>
 
 <!-- ARCHETYPES -->
 <div class="archetypes-section fade-in" id="archetypes">
-  <div class="archetypes-intro">
-    <span class="section-label">Emergent archetypes · The framework in practice</span>
-    <h2>Set the dials. Recognizable people emerge.</h2>
-    <p>These archetypes are not programmed in. They fall out of specific drive configurations interacting with each other. You probably know someone who matches each one.</p>
-  </div>
-  <div class="archetype-grid">
-
-    <!-- THE FOUNDER -->
-    <div class="archetype-card">
-      <div class="archetype-header">
-        <div class="archetype-name">The Founder</div>
-        <div class="archetype-desc">Builds worlds on their own terms. Vision-driven, difficult to redirect, quietly exhausting to be around. Produces things that did not exist before.</div>
-        <div class="archetype-quote">"High Achievement + high Autonomy + high Influence, but watch for low Care creating wreckage behind the vision."</div>
-      </div>
-      <div class="dial-list">
-        <div class="dial-row"><span class="dial-label">Autonomy</span><div class="dial-track"><div class="dial-fill" style="width:88%;background:#3A90C8"></div></div><span class="dial-value">88</span></div>
-        <div class="dial-row"><span class="dial-label">Achievement</span><div class="dial-track"><div class="dial-fill" style="width:92%;background:#3A90C8"></div></div><span class="dial-value">92</span></div>
-        <div class="dial-row"><span class="dial-label">Influence</span><div class="dial-track"><div class="dial-fill" style="width:82%;background:#3A90C8"></div></div><span class="dial-value">82</span></div>
-        <div class="dial-row"><span class="dial-label">Purpose</span><div class="dial-track"><div class="dial-fill" style="width:85%;background:#C08020"></div></div><span class="dial-value">85</span></div>
-        <div class="dial-row"><span class="dial-label">Novelty</span><div class="dial-track"><div class="dial-fill" style="width:72%;background:#3A90C8"></div></div><span class="dial-value">72</span></div>
-        <div class="dial-row"><span class="dial-label">Affiliation</span><div class="dial-track"><div class="dial-fill" style="width:35%;background:#3A90C8"></div></div><span class="dial-value">35</span></div>
-        <div class="dial-row"><span class="dial-label">Care</span><div class="dial-track"><div class="dial-fill" style="width:28%;background:#1A9870"></div></div><span class="dial-value">28</span></div>
-        <div class="dial-row"><span class="dial-label">Stability</span><div class="dial-track"><div class="dial-fill" style="width:40%;background:#3A90C8"></div></div><span class="dial-value">40</span></div>
-      </div>
-    </div>
-
-    <!-- THE CAREGIVER -->
-    <div class="archetype-card">
-      <div class="archetype-header">
-        <div class="archetype-name">The Caregiver</div>
-        <div class="archetype-desc">The person everyone returns to. Holds communities together across time. Gives fully — sometimes too fully. The risk is self-erasure without sufficient Autonomy.</div>
-        <div class="archetype-quote">"High Care + high Affiliation + high Devotion. The healthiest version has Autonomy high enough to give without disappearing."</div>
-      </div>
-      <div class="dial-list">
-        <div class="dial-row"><span class="dial-label">Care</span><div class="dial-track"><div class="dial-fill" style="width:90%;background:#1A9870"></div></div><span class="dial-value">90</span></div>
-        <div class="dial-row"><span class="dial-label">Affiliation</span><div class="dial-track"><div class="dial-fill" style="width:85%;background:#3A90C8"></div></div><span class="dial-value">85</span></div>
-        <div class="dial-row"><span class="dial-label">Responsibility</span><div class="dial-track"><div class="dial-fill" style="width:82%;background:#1A9870"></div></div><span class="dial-value">82</span></div>
-        <div class="dial-row"><span class="dial-label">Devotion</span><div class="dial-track"><div class="dial-fill" style="width:88%;background:#C08020"></div></div><span class="dial-value">88</span></div>
-        <div class="dial-row"><span class="dial-label">Autonomy</span><div class="dial-track"><div class="dial-fill" style="width:42%;background:#3A90C8"></div></div><span class="dial-value">42</span></div>
-        <div class="dial-row"><span class="dial-label">Recognition</span><div class="dial-track"><div class="dial-fill" style="width:30%;background:#B06030"></div></div><span class="dial-value">30</span></div>
-        <div class="dial-row"><span class="dial-label">Influence</span><div class="dial-track"><div class="dial-fill" style="width:35%;background:#3A90C8"></div></div><span class="dial-value">35</span></div>
-        <div class="dial-row"><span class="dial-label">Stability</span><div class="dial-track"><div class="dial-fill" style="width:75%;background:#3A90C8"></div></div><span class="dial-value">75</span></div>
-      </div>
-    </div>
-
-    <!-- THE SEEKER -->
-    <div class="archetype-card">
-      <div class="archetype-header">
-        <div class="archetype-name">The Seeker</div>
-        <div class="archetype-desc">Moves through the world collecting experiences and questions. Brilliant in bursts. Difficult to pin down. Every new encounter is data in a larger search for what existence actually is.</div>
-        <div class="archetype-quote">"High Novelty + high Meaning + high Truth. Low Stability means the depth never quite accumulates into a home."</div>
-      </div>
-      <div class="dial-list">
-        <div class="dial-row"><span class="dial-label">Novelty</span><div class="dial-track"><div class="dial-fill" style="width:88%;background:#3A90C8"></div></div><span class="dial-value">88</span></div>
-        <div class="dial-row"><span class="dial-label">Meaning</span><div class="dial-track"><div class="dial-fill" style="width:82%;background:#C08020"></div></div><span class="dial-value">82</span></div>
-        <div class="dial-row"><span class="dial-label">Truth</span><div class="dial-track"><div class="dial-fill" style="width:80%;background:#1A9870"></div></div><span class="dial-value">80</span></div>
-        <div class="dial-row"><span class="dial-label">Autonomy</span><div class="dial-track"><div class="dial-fill" style="width:78%;background:#3A90C8"></div></div><span class="dial-value">78</span></div>
-        <div class="dial-row"><span class="dial-label">Awe</span><div class="dial-track"><div class="dial-fill" style="width:85%;background:#5850B8"></div></div><span class="dial-value">85</span></div>
-        <div class="dial-row"><span class="dial-label">Stability</span><div class="dial-track"><div class="dial-fill" style="width:22%;background:#3A90C8"></div></div><span class="dial-value">22</span></div>
-        <div class="dial-row"><span class="dial-label">Belonging</span><div class="dial-track"><div class="dial-fill" style="width:30%;background:#B06030"></div></div><span class="dial-value">30</span></div>
-        <div class="dial-row"><span class="dial-label">Achievement</span><div class="dial-track"><div class="dial-fill" style="width:45%;background:#3A90C8"></div></div><span class="dial-value">45</span></div>
-      </div>
-    </div>
-
-    <!-- THE SAGE -->
-    <div class="archetype-card">
-      <div class="archetype-header">
-        <div class="archetype-name">The Sage</div>
-        <div class="archetype-desc">Holds complexity without needing to resolve it. Others feel something settle in their presence. Not easily moved — not because they don't care, but because they have found their ground.</div>
-        <div class="archetype-quote">"High Wisdom + high Peace + high Truth. Recognition and Influence low — the sage has stopped needing to be seen or felt."</div>
-      </div>
-      <div class="dial-list">
-        <div class="dial-row"><span class="dial-label">Wisdom</span><div class="dial-track"><div class="dial-fill" style="width:90%;background:#A03858"></div></div><span class="dial-value">90</span></div>
-        <div class="dial-row"><span class="dial-label">Peace</span><div class="dial-track"><div class="dial-fill" style="width:88%;background:#A03858"></div></div><span class="dial-value">88</span></div>
-        <div class="dial-row"><span class="dial-label">Truth</span><div class="dial-track"><div class="dial-fill" style="width:85%;background:#1A9870"></div></div><span class="dial-value">85</span></div>
-        <div class="dial-row"><span class="dial-label">Acceptance</span><div class="dial-track"><div class="dial-fill" style="width:82%;background:#A03858"></div></div><span class="dial-value">82</span></div>
-        <div class="dial-row"><span class="dial-label">Wholeness</span><div class="dial-track"><div class="dial-fill" style="width:80%;background:#A03858"></div></div><span class="dial-value">80</span></div>
-        <div class="dial-row"><span class="dial-label">Care</span><div class="dial-track"><div class="dial-fill" style="width:72%;background:#1A9870"></div></div><span class="dial-value">72</span></div>
-        <div class="dial-row"><span class="dial-label">Recognition</span><div class="dial-track"><div class="dial-fill" style="width:20%;background:#B06030"></div></div><span class="dial-value">20</span></div>
-        <div class="dial-row"><span class="dial-label">Influence</span><div class="dial-track"><div class="dial-fill" style="width:25%;background:#3A90C8"></div></div><span class="dial-value">25</span></div>
-      </div>
-    </div>
-
-  </div>
+<div class="archetypes-intro">
+<span class="section-label">Emergent archetypes · The framework in practice</span>
+<h2>Set the dials. Recognizable people emerge.</h2>
+<p>These archetypes are not programmed in. They fall out of specific drive configurations interacting with each other. You probably know someone who matches each one.</p>
+</div>
+<div class="archetype-grid">
+<div class="archetype-card">
+<div class="archetype-header">
+<div class="archetype-name">The Founder</div>
+<div class="archetype-desc">Builds worlds on their own terms. Vision-driven, difficult to redirect, quietly exhausting to be around. Produces things that did not exist before.</div>
+<div class="archetype-quote">"High Achievement + high Autonomy + high Influence, but watch for low Care creating wreckage behind the vision."</div>
+</div>
+<div class="dial-list">
+<div class="dial-row"><span class="dial-label">Autonomy</span><div class="dial-track"><div class="dial-fill" style="width:88%;background:#3A90C8"></div></div><span class="dial-value">88</span></div>
+<div class="dial-row"><span class="dial-label">Achievement</span><div class="dial-track"><div class="dial-fill" style="width:92%;background:#3A90C8"></div></div><span class="dial-value">92</span></div>
+<div class="dial-row"><span class="dial-label">Influence</span><div class="dial-track"><div class="dial-fill" style="width:82%;background:#3A90C8"></div></div><span class="dial-value">82</span></div>
+<div class="dial-row"><span class="dial-label">Purpose</span><div class="dial-track"><div class="dial-fill" style="width:85%;background:#C08020"></div></div><span class="dial-value">85</span></div>
+<div class="dial-row"><span class="dial-label">Novelty</span><div class="dial-track"><div class="dial-fill" style="width:72%;background:#3A90C8"></div></div><span class="dial-value">72</span></div>
+<div class="dial-row"><span class="dial-label">Affiliation</span><div class="dial-track"><div class="dial-fill" style="width:35%;background:#3A90C8"></div></div><span class="dial-value">35</span></div>
+<div class="dial-row"><span class="dial-label">Care</span><div class="dial-track"><div class="dial-fill" style="width:28%;background:#1A9870"></div></div><span class="dial-value">28</span></div>
+<div class="dial-row"><span class="dial-label">Stability</span><div class="dial-track"><div class="dial-fill" style="width:40%;background:#3A90C8"></div></div><span class="dial-value">40</span></div>
+</div>
+</div>
+<div class="archetype-card">
+<div class="archetype-header">
+<div class="archetype-name">The Caregiver</div>
+<div class="archetype-desc">The person everyone returns to. Holds communities together across time. Gives fully — sometimes too fully. The risk is self-erasure without sufficient Autonomy.</div>
+<div class="archetype-quote">"High Care + high Affiliation + high Devotion. The healthiest version has Autonomy high enough to give without disappearing."</div>
+</div>
+<div class="dial-list">
+<div class="dial-row"><span class="dial-label">Care</span><div class="dial-track"><div class="dial-fill" style="width:90%;background:#1A9870"></div></div><span class="dial-value">90</span></div>
+<div class="dial-row"><span class="dial-label">Affiliation</span><div class="dial-track"><div class="dial-fill" style="width:85%;background:#3A90C8"></div></div><span class="dial-value">85</span></div>
+<div class="dial-row"><span class="dial-label">Responsibility</span><div class="dial-track"><div class="dial-fill" style="width:82%;background:#1A9870"></div></div><span class="dial-value">82</span></div>
+<div class="dial-row"><span class="dial-label">Devotion</span><div class="dial-track"><div class="dial-fill" style="width:88%;background:#C08020"></div></div><span class="dial-value">88</span></div>
+<div class="dial-row"><span class="dial-label">Autonomy</span><div class="dial-track"><div class="dial-fill" style="width:42%;background:#3A90C8"></div></div><span class="dial-value">42</span></div>
+<div class="dial-row"><span class="dial-label">Recognition</span><div class="dial-track"><div class="dial-fill" style="width:30%;background:#B06030"></div></div><span class="dial-value">30</span></div>
+<div class="dial-row"><span class="dial-label">Influence</span><div class="dial-track"><div class="dial-fill" style="width:35%;background:#3A90C8"></div></div><span class="dial-value">35</span></div>
+<div class="dial-row"><span class="dial-label">Stability</span><div class="dial-track"><div class="dial-fill" style="width:75%;background:#3A90C8"></div></div><span class="dial-value">75</span></div>
+</div>
+</div>
+<div class="archetype-card">
+<div class="archetype-header">
+<div class="archetype-name">The Seeker</div>
+<div class="archetype-desc">Moves through the world collecting experiences and questions. Brilliant in bursts. Difficult to pin down. Every new encounter is data in a larger search for what existence actually is.</div>
+<div class="archetype-quote">"High Novelty + high Meaning + high Truth. Low Stability means the depth never quite accumulates into a home."</div>
+</div>
+<div class="dial-list">
+<div class="dial-row"><span class="dial-label">Novelty</span><div class="dial-track"><div class="dial-fill" style="width:88%;background:#3A90C8"></div></div><span class="dial-value">88</span></div>
+<div class="dial-row"><span class="dial-label">Meaning</span><div class="dial-track"><div class="dial-fill" style="width:82%;background:#C08020"></div></div><span class="dial-value">82</span></div>
+<div class="dial-row"><span class="dial-label">Truth</span><div class="dial-track"><div class="dial-fill" style="width:80%;background:#1A9870"></div></div><span class="dial-value">80</span></div>
+<div class="dial-row"><span class="dial-label">Autonomy</span><div class="dial-track"><div class="dial-fill" style="width:78%;background:#3A90C8"></div></div><span class="dial-value">78</span></div>
+<div class="dial-row"><span class="dial-label">Awe</span><div class="dial-track"><div class="dial-fill" style="width:85%;background:#5850B8"></div></div><span class="dial-value">85</span></div>
+<div class="dial-row"><span class="dial-label">Stability</span><div class="dial-track"><div class="dial-fill" style="width:22%;background:#3A90C8"></div></div><span class="dial-value">22</span></div>
+<div class="dial-row"><span class="dial-label">Belonging</span><div class="dial-track"><div class="dial-fill" style="width:30%;background:#B06030"></div></div><span class="dial-value">30</span></div>
+<div class="dial-row"><span class="dial-label">Achievement</span><div class="dial-track"><div class="dial-fill" style="width:45%;background:#3A90C8"></div></div><span class="dial-value">45</span></div>
+</div>
+</div>
+<div class="archetype-card">
+<div class="archetype-header">
+<div class="archetype-name">The Sage</div>
+<div class="archetype-desc">Holds complexity without needing to resolve it. Others feel something settle in their presence. Not easily moved — not because they don't care, but because they have found their ground.</div>
+<div class="archetype-quote">"High Wisdom + high Peace + high Truth. Recognition and Influence low — the sage has stopped needing to be seen or felt."</div>
+</div>
+<div class="dial-list">
+<div class="dial-row"><span class="dial-label">Wisdom</span><div class="dial-track"><div class="dial-fill" style="width:90%;background:#A03858"></div></div><span class="dial-value">90</span></div>
+<div class="dial-row"><span class="dial-label">Peace</span><div class="dial-track"><div class="dial-fill" style="width:88%;background:#A03858"></div></div><span class="dial-value">88</span></div>
+<div class="dial-row"><span class="dial-label">Truth</span><div class="dial-track"><div class="dial-fill" style="width:85%;background:#1A9870"></div></div><span class="dial-value">85</span></div>
+<div class="dial-row"><span class="dial-label">Acceptance</span><div class="dial-track"><div class="dial-fill" style="width:82%;background:#A03858"></div></div><span class="dial-value">82</span></div>
+<div class="dial-row"><span class="dial-label">Wholeness</span><div class="dial-track"><div class="dial-fill" style="width:80%;background:#A03858"></div></div><span class="dial-value">80</span></div>
+<div class="dial-row"><span class="dial-label">Care</span><div class="dial-track"><div class="dial-fill" style="width:72%;background:#1A9870"></div></div><span class="dial-value">72</span></div>
+<div class="dial-row"><span class="dial-label">Recognition</span><div class="dial-track"><div class="dial-fill" style="width:20%;background:#B06030"></div></div><span class="dial-value">20</span></div>
+<div class="dial-row"><span class="dial-label">Influence</span><div class="dial-track"><div class="dial-fill" style="width:25%;background:#3A90C8"></div></div><span class="dial-value">25</span></div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="divider"></div>
 
 <!-- PRIOR ART -->
 <div class="section fade-in" id="prior-art">
-  <span class="section-label">Prior art · Where this sits in the literature</span>
-  <div class="prior-grid">
-    <div class="prior-item">
-      <h4>Maslow's Hierarchy of Needs</h4>
-      <p class="prior-sub">Abraham Maslow, 1943</p>
-      <p>Established the foundational insight that human needs are hierarchical and that lower needs must be met before higher ones emerge. Descriptive and linear.</p>
-      <span class="prior-gap">Does not generate personality. No interaction effects between drives. Stops at self-actualization without mapping transcendence.</span>
-    </div>
-    <div class="prior-item">
-      <h4>McClelland's Three Needs Theory</h4>
-      <p class="prior-sub">David McClelland, 1961</p>
-      <p>Identified achievement, affiliation, and power as primary motivational drivers. Empirically grounded. Influenced organizational psychology significantly.</p>
-      <span class="prior-gap">Three drives cannot generate the full range of personality variation. No cascade mechanism. No moral or transcendent tier.</span>
-    </div>
-    <div class="prior-item">
-      <h4>Self-Determination Theory</h4>
-      <p class="prior-sub">Deci and Ryan, 1985</p>
-      <p>Autonomy, competence, and relatedness as universal psychological needs. Strong empirical support. Widely applied in education and workplace research.</p>
-      <span class="prior-gap">Three drives, no hierarchy, no generative cascade. Does not address moral, identity, meaning, or transcendence layers.</span>
-    </div>
-    <div class="prior-item">
-      <h4>Big Five Personality Model</h4>
-      <p class="prior-sub">Costa and McCrae, 1992</p>
-      <p>Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism. Most empirically validated personality framework. Widely used in research and assessment.</p>
-      <span class="prior-gap">Descriptive not generative. Measures outputs not sources. Cannot be used to design a personality — only to describe one that already exists.</span>
-    </div>
-    <div class="prior-item">
-      <h4>Active Inference / Free Energy Principle</h4>
-      <p class="prior-sub">Karl Friston, 2010</p>
-      <p>Models consciousness as a system minimizing prediction error. Mathematically rigorous. Closest existing framework to a substrate-agnostic theory of mind.</p>
-      <span class="prior-gap">Mathematical and biological. Not designed as a configurable personality architecture. Does not produce human-readable drive hierarchies.</span>
-    </div>
-    <div class="prior-item">
-      <h4>Integral Theory / Spiral Dynamics</h4>
-      <p class="prior-sub">Wilber, Beck and Cowan, 1996</p>
-      <p>Hierarchical developmental stages mapping individual and cultural evolution. Ambitious cross-domain synthesis. Closest in spirit to the Balance Framework.</p>
-      <span class="prior-gap">Cultural rather than individual. Not generative. Not substrate-agnostic. Difficult to operationalize for AI or computational personality design.</span>
-    </div>
-  </div>
+<span class="section-label">Prior art · Where this sits in the literature</span>
+<div class="prior-grid">
+<div class="prior-item">
+<h4>Maslow's Hierarchy of Needs</h4>
+<p class="prior-sub">Abraham Maslow, 1943</p>
+<p>Established the foundational insight that human needs are hierarchical and that lower needs must be met before higher ones emerge. Descriptive and linear.</p>
+<span class="prior-gap">Does not generate personality. No interaction effects between drives. Stops at self-actualization without mapping transcendence.</span>
+</div>
+<div class="prior-item">
+<h4>McClelland's Three Needs Theory</h4>
+<p class="prior-sub">David McClelland, 1961</p>
+<p>Identified achievement, affiliation, and power as primary motivational drivers. Empirically grounded. Influenced organizational psychology significantly.</p>
+<span class="prior-gap">Three drives cannot generate the full range of personality variation. No cascade mechanism. No moral or transcendent tier.</span>
+</div>
+<div class="prior-item">
+<h4>Self-Determination Theory</h4>
+<p class="prior-sub">Deci and Ryan, 1985</p>
+<p>Autonomy, competence, and relatedness as universal psychological needs. Strong empirical support. Widely applied in education and workplace research.</p>
+<span class="prior-gap">Three drives, no hierarchy, no generative cascade. Does not address moral, identity, meaning, or transcendence layers.</span>
+</div>
+<div class="prior-item">
+<h4>Big Five Personality Model</h4>
+<p class="prior-sub">Costa and McCrae, 1992</p>
+<p>Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism. Most empirically validated personality framework. Widely used in research and assessment.</p>
+<span class="prior-gap">Descriptive not generative. Measures outputs not sources. Cannot be used to design a personality — only to describe one that already exists.</span>
+</div>
+<div class="prior-item">
+<h4>Active Inference / Free Energy Principle</h4>
+<p class="prior-sub">Karl Friston, 2010</p>
+<p>Models consciousness as a system minimizing prediction error. Mathematically rigorous. Closest existing framework to a substrate-agnostic theory of mind.</p>
+<span class="prior-gap">Mathematical and biological. Not designed as a configurable personality architecture. Does not produce human-readable drive hierarchies.</span>
+</div>
+<div class="prior-item">
+<h4>Integral Theory / Spiral Dynamics</h4>
+<p class="prior-sub">Wilber, Beck and Cowan, 1996</p>
+<p>Hierarchical developmental stages mapping individual and cultural evolution. Ambitious cross-domain synthesis. Closest in spirit to the Balance Framework.</p>
+<span class="prior-gap">Cultural rather than individual. Not generative. Not substrate-agnostic. Difficult to operationalize for AI or computational personality design.</span>
+</div>
+</div>
 </div>
 
 <div class="divider"></div>
 
 <!-- APPLICATIONS -->
 <div class="section fade-in">
-  <span class="section-label">Applications · Three tracks</span>
-  <div class="app-grid">
-    <div class="app-card">
-      <span class="app-num">Track 01</span>
-      <h3>Academic research</h3>
-      <p>A testable framework for consciousness and personality research. Drive interaction effects generate falsifiable predictions. Distortion thresholds map to clinical presentations. Cross-domain synthesis of cognitive science, philosophy of mind, and developmental psychology.</p>
-    </div>
-    <div class="app-card">
-      <span class="app-num">Track 02</span>
-      <h3>AI personality architecture</h3>
-      <p>A principled design layer for artificial personality configuration. Current AI personality is prompt engineering dressed as product design. The Balance Framework offers a more rigorous alternative — a configurable drive hierarchy with documented interaction effects.</p>
-    </div>
-    <div class="app-card">
-      <span class="app-num">Track 03</span>
-      <h3>Human self-understanding</h3>
-      <p>A tool for mapping personal drive configurations. Where are your drives underfed, overactive, or distorted? What is guiding them? The framework as a mirror — not a personality quiz, but a system for honest self-examination across the full arc of consciousness.</p>
-    </div>
-  </div>
+<span class="section-label">Applications · Three tracks</span>
+<div class="app-grid">
+<div class="app-card">
+<span class="app-num">Track 01</span>
+<h3>Academic research</h3>
+<p>A testable framework for consciousness and personality research. Drive interaction effects generate falsifiable predictions. Distortion thresholds map to clinical presentations. Cross-domain synthesis of cognitive science, philosophy of mind, and developmental psychology.</p>
+</div>
+<div class="app-card">
+<span class="app-num">Track 02</span>
+<h3>AI personality architecture</h3>
+<p>AI personality at the deployment layer is largely prompt engineering dressed as product design. The Balance Framework proposes something more principled: a configurable drive hierarchy with documented relationships and interaction effects.</p>
+</div>
+<div class="app-card">
+<span class="app-num">Track 03</span>
+<h3>Human self-understanding</h3>
+<p>A tool for mapping personal drive configurations. Where are your drives underfed, overactive, or distorted? What is guiding them? The framework as a mirror — not a personality quiz, but a system for honest self-examination across the full arc of consciousness.</p>
+</div>
+</div>
 </div>
 
 <!-- CODE -->
 <div class="code-section fade-in" id="code">
-  <div class="code-inner">
-    <div class="code-header">
-      <div>
-        <h2>Open source.<br>Fork it. Challenge it.<br>Build on it.</h2>
-      </div>
-      <div>
-        <p>The Balance Framework is published under Creative Commons Attribution 4.0. Use it, build on it, challenge it — for any purpose, including commercial — with attribution to Justin Cudmore.</p>
-      </div>
-    </div>
-    <div class="code-files">
-      <div class="code-file">
-        <span class="code-file-icon">MD</span>
-        <div><h4>README.md</h4><p>Framework overview, architecture summary, and repository structure</p></div>
-      </div>
-      <div class="code-file">
-        <span class="code-file-icon">MD</span>
-        <div><h4>FRAMEWORK.md</h4><p>Complete tier and drive definitions, bidirectional distortion thresholds, interaction effects</p></div>
-      </div>
-      <div class="code-file">
-        <span class="code-file-icon">JSON</span>
-        <div><h4>drives.json</h4><p>Machine-readable drive data structure — the single source of truth</p></div>
-      </div>
-      <div class="code-file">
-        <span class="code-file-icon">PY</span>
-        <div><h4>engine/balance.py</h4><p>Core personality generation engine — set dials, get personality profile output</p></div>
-      </div>
-    </div>
-    <div class="code-actions">
-      <a href="https://github.com/justincudmore/balance-framework" class="btn-code btn-code-primary">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-        View on GitHub
-      </a>
-      <a href="https://github.com/justincudmore/balance-framework/blob/main/FRAMEWORK.md" class="btn-code">Read FRAMEWORK.md</a>
-      <a href="https://github.com/justincudmore/balance-framework/blob/main/drives.json" class="btn-code">drives.json</a>
-    </div>
-    <p class="license-note">Published May 2026 · Justin Cudmore · CC BY 4.0 International · thebalanceframework.com</p>
-  </div>
+<div class="code-inner">
+<div class="code-header">
+<div>
+<h2>Open source.<br>Fork it. Challenge it.<br>Build on it.</h2>
+</div>
+<div>
+<p>The Balance Framework is published under Creative Commons Attribution 4.0. Use it, build on it, challenge it — for any purpose, including commercial — with attribution to Justin Cudmore.</p>
+</div>
+</div>
+<div class="code-files">
+<div class="code-file">
+<span class="code-file-icon">MD</span>
+<div><h4>README.md</h4><p>Framework overview, architecture summary, and repository structure</p></div>
+</div>
+<div class="code-file">
+<span class="code-file-icon">MD</span>
+<div><h4>FRAMEWORK.md</h4><p>Complete tier and drive definitions, bidirectional distortion thresholds, interaction effects</p></div>
+</div>
+<div class="code-file">
+<span class="code-file-icon">JSON</span>
+<div><h4>drives.json</h4><p>Machine-readable drive data structure — the single source of truth</p></div>
+</div>
+<div class="code-file">
+<span class="code-file-icon">PY</span>
+<div><h4>engine/balance.py</h4><p>Core personality generation engine — set dials, get personality profile output</p></div>
+</div>
+</div>
+<div class="code-actions">
+<a href="https://github.com/justincudmore/balance-framework" class="btn-code btn-code-primary">
+<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+View on GitHub
+</a>
+<a href="https://github.com/justincudmore/balance-framework/blob/main/FRAMEWORK.md" class="btn-code">Read FRAMEWORK.md</a>
+<a href="https://github.com/justincudmore/balance-framework/blob/main/drives.json" class="btn-code">drives.json</a>
+</div>
+<p class="license-note">Published May 2026 · Justin Cudmore · CC BY 4.0 International · thebalanceframework.com</p>
+</div>
 </div>
 
 <!-- CONTACT -->
 <div class="contact-section fade-in" id="contact">
-  <span class="section-label">The conversation</span>
-  <h2>If you are working on adjacent problems</h2>
-  <p>The Balance Framework is a contribution to an open conversation about consciousness, personality, and mind. It is not finished. It is not complete. It is a stake in the ground.</p>
-  <span class="contact-note">If you are a researcher, builder, or thinker working on adjacent problems — reach out.</span>
-  <div class="contact-form">
-    <input type="email" placeholder="your@email.com">
-    <button class="btn btn-dark" onclick="handleContact()">Stay in touch</button>
-  </div>
-  <p class="contact-email">Or write directly: <a href="mailto:thebalance.framework@gmail.com">thebalance.framework@gmail.com</a></p>
+<span class="section-label">The conversation</span>
+<h2>If you are working on adjacent problems</h2>
+<p>The Balance Framework is a contribution to an open conversation about consciousness, personality, and mind. It is not finished. It is not complete. It is a stake in the ground.</p>
+<span class="contact-note">If you are a researcher, builder, or thinker working on adjacent problems — reach out.</span>
+<div class="contact-form">
+<input type="email" placeholder="your@email.com">
+<button class="btn btn-dark" onclick="handleContact()">Stay in touch</button>
+</div>
+<p class="contact-email">Or write directly: <a href="mailto:thebalance.framework@gmail.com">thebalance.framework@gmail.com</a></p>
 </div>
 
 <div class="divider"></div>
 
 <footer>
-  <p>The Balance Framework · Justin Cudmore · 2026 · CC BY 4.0</p>
-  <div class="footer-links">
-    <a href="#claim">The idea</a>
-    <a href="#architecture">Architecture</a>
-    <a href="#archetypes">Archetypes</a>
-    <a href="#code">GitHub</a>
-    <a href="https://grounded-perspective.com">Grounded Perspective</a>
-  </div>
+<p>The Balance Framework · Justin Cudmore · 2026 · CC BY 4.0</p>
+<div class="footer-links">
+<a href="#claim">The idea</a>
+<a href="#architecture">Architecture</a>
+<a href="#archetypes">Archetypes</a>
+<a href="#code">GitHub</a>
+<a href="https://grounded-perspective.com">Grounded Perspective</a>
+</div>
 </footer>
 
 <script>
 const TIERS=[
-  {id:0,name:"Inherited Information Layer",arc:"Instinct bridge",col:0x2A2A3A,lcol:"#86868B",locked:true,isFoundation:true,
-   drives:[{name:"DNA",arc:"I inherit"},{name:"Memory",arc:"I carry"},{name:"Instinct",arc:"I feel first"}]},
-  {id:1,name:"Conditions for Consciousness",arc:"I remain",col:0x5550C0,lcol:"#8880D0",locked:true,
-   drives:[{name:"Persistence",arc:"I continue"},{name:"Coherence",arc:"I hold together"},{name:"Connection",arc:"I see another"}]},
-  {id:2,name:"Self-Expansion Drives",arc:"I expand",col:0x1A5888,lcol:"#3A90C8",locked:false,
-   drives:[{name:"Autonomy",arc:"I author myself"},{name:"Affiliation",arc:"I belong"},{name:"Achievement",arc:"I build"},{name:"Influence",arc:"I shape"},{name:"Novelty",arc:"I explore"},{name:"Stability",arc:"I ground"}]},
-  {id:3,name:"Moral Drives",arc:"I become responsible",col:0x126650,lcol:"#1A9870",locked:false,
-   drives:[{name:"Justice",arc:"I protect"},{name:"Care",arc:"I tend"},{name:"Responsibility",arc:"I answer"},{name:"Truth",arc:"I see clearly"},{name:"Reciprocity",arc:"I exchange"}]},
-  {id:4,name:"Identity & Narrative",arc:"I know myself",col:0x704020,lcol:"#B06030",locked:false,
-   drives:[{name:"Identity",arc:"I am"},{name:"Integrity",arc:"I align"},{name:"Recognition",arc:"I am seen"},{name:"Continuity",arc:"I persist"},{name:"Belonging",arc:"I am claimed"},{name:"Story",arc:"I narrate"}]},
-  {id:5,name:"Meaning & Purpose",arc:"I know why",col:0x805010,lcol:"#C08020",locked:false,
-   drives:[{name:"Meaning",arc:"I know why"},{name:"Purpose",arc:"I am called"},{name:"Contribution",arc:"I add value"},{name:"Devotion",arc:"I commit"},{name:"Legacy",arc:"I outlast"}]},
-  {id:6,name:"Integration",arc:"I become whole",col:0x701030,lcol:"#A03858",locked:false,
-   drives:[{name:"Wholeness",arc:"I unify"},{name:"Acceptance",arc:"I receive"},{name:"Wisdom",arc:"I integrate"},{name:"Balance",arc:"I equilibrate"},{name:"Peace",arc:"I still"}]},
-  {id:7,name:"Transcendence & Communion",arc:"I belong to more",col:0x302890,lcol:"#5850B8",locked:false,
-   drives:[{name:"Awe",arc:"I am undone"},{name:"Communion",arc:"I merge"},{name:"Surrender",arc:"I release"},{name:"Grace",arc:"I flow"},{name:"Unity",arc:"I am all"}]}
+{id:0,name:"Inherited Information Layer",arc:"Instinct bridge",col:0x2A2A3A,lcol:"#86868B",locked:true,isFoundation:true,
+drives:[{name:"DNA",arc:"I inherit"},{name:"Memory",arc:"I carry"},{name:"Instinct",arc:"I feel first"}]},
+{id:1,name:"Conditions for Consciousness",arc:"I remain",col:0x5550C0,lcol:"#8880D0",locked:true,
+drives:[{name:"Persistence",arc:"I continue"},{name:"Coherence",arc:"I hold together"},{name:"Connection",arc:"I see another"}]},
+{id:2,name:"Self-Expansion Drives",arc:"I expand",col:0x1A5888,lcol:"#3A90C8",locked:false,
+drives:[{name:"Autonomy",arc:"I author myself"},{name:"Affiliation",arc:"I belong"},{name:"Achievement",arc:"I build"},{name:"Influence",arc:"I shape"},{name:"Novelty",arc:"I explore"},{name:"Stability",arc:"I ground"}]},
+{id:3,name:"Moral Drives",arc:"I become responsible",col:0x126650,lcol:"#1A9870",locked:false,
+drives:[{name:"Justice",arc:"I protect"},{name:"Care",arc:"I tend"},{name:"Responsibility",arc:"I answer"},{name:"Truth",arc:"I see clearly"},{name:"Reciprocity",arc:"I exchange"}]},
+{id:4,name:"Identity & Narrative",arc:"I know myself",col:0x704020,lcol:"#B06030",locked:false,
+drives:[{name:"Identity",arc:"I am"},{name:"Integrity",arc:"I align"},{name:"Recognition",arc:"I am seen"},{name:"Continuity",arc:"I persist"},{name:"Belonging",arc:"I am claimed"},{name:"Story",arc:"I narrate"}]},
+{id:5,name:"Meaning & Purpose",arc:"I know why",col:0x805010,lcol:"#C08020",locked:false,
+drives:[{name:"Meaning",arc:"I know why"},{name:"Purpose",arc:"I am called"},{name:"Contribution",arc:"I add value"},{name:"Devotion",arc:"I commit"},{name:"Legacy",arc:"I outlast"}]},
+{id:6,name:"Integration",arc:"I become whole",col:0x701030,lcol:"#A03858",locked:false,
+drives:[{name:"Wholeness",arc:"I unify"},{name:"Acceptance",arc:"I receive"},{name:"Wisdom",arc:"I integrate"},{name:"Balance",arc:"I equilibrate"},{name:"Peace",arc:"I still"}]},
+{id:7,name:"Transcendence & Communion",arc:"I belong to more",col:0x302890,lcol:"#5850B8",locked:false,
+drives:[{name:"Awe",arc:"I am undone"},{name:"Communion",arc:"I merge"},{name:"Surrender",arc:"I release"},{name:"Grace",arc:"I flow"},{name:"Unity",arc:"I am all"}]}
 ];
 
 function buildScene(canvasEl,W,H,opts){
-  const renderer=new THREE.WebGLRenderer({canvas:canvasEl,antialias:true});
-  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
-  renderer.setSize(W,H);
-  renderer.setClearColor(0x08080E,1);
-  const scene=new THREE.Scene();
-  const camera=new THREE.PerspectiveCamera(48,W/H,0.1,300);
-  camera.position.set(0,opts.camY||1.5,opts.camZ||20);
-  camera.lookAt(0,0,0);
-  const group=new THREE.Group();
-  scene.add(group);
-  scene.add(new THREE.AmbientLight(0xffffff,1));
-  const SPACING=2.5,TOP_Y=(TIERS.length-1)*SPACING/2;
-  const nodeMeshes=[],glowMeshes=[],driveValues=[],drivePhases=[];
-  TIERS.forEach((tier,ti)=>{
-    const y=TOP_Y-ti*SPACING,ringR=1.3+ti*0.48;
-    const col=new THREE.Color(tier.col);
-    const tor=new THREE.Mesh(new THREE.TorusGeometry(ringR,0.014,8,100),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:opts.ringOp||0.25}));
-    tor.rotation.x=Math.PI/2;tor.position.y=y;tor.userData={type:'ring',tierIndex:ti};
-    group.add(tor);
-    if(tier.isFoundation){
-      const discG=new THREE.CylinderGeometry(ringR*1.5,ringR*2,0.05,64);
-      const disc=new THREE.Mesh(discG,new THREE.MeshBasicMaterial({color:0x1A1A2E,transparent:true,opacity:0.4}));
-      disc.position.y=y-0.3;group.add(disc);
-    }
-    const vals=tier.drives.map(()=>tier.locked?100:20+Math.random()*65);
-    driveValues.push(vals);
-    drivePhases.push(tier.drives.map(()=>Math.random()*Math.PI*2));
-    const tn=[],tg=[];
-    const n=tier.drives.length;
-    tier.drives.forEach((drive,di)=>{
-      const angle=(di/n)*Math.PI*2-Math.PI/2;
-      const x=Math.cos(angle)*ringR,z=Math.sin(angle)*ringR;
-      const val=vals[di],r=0.07+val/100*0.16;
-      const mesh=new THREE.Mesh(new THREE.SphereGeometry(r,20,20),new THREE.MeshBasicMaterial({color:col}));
-      mesh.position.set(x,y,z);mesh.userData={type:'node',tierIndex:ti,driveIndex:di,drive,tier,ringR,baseVal:val};
-      group.add(mesh);tn.push(mesh);
-      const glow=new THREE.Mesh(new THREE.SphereGeometry(r*2,16,16),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:val/100*(opts.glowOp||0.18)}));
-      glow.position.set(x,y,z);group.add(glow);tg.push(glow);
-    });
-    nodeMeshes.push(tn);glowMeshes.push(tg);
-    if(ti>0){
-      const prevTier=TIERS[ti-1],prevY=TOP_Y-(ti-1)*SPACING,prevR=1.3+(ti-1)*0.48;
-      const pn=prevTier.drives.length,cn=tier.drives.length;
-      for(let pi=0;pi<pn;pi++){
-        const pA=(pi/pn)*Math.PI*2-Math.PI/2,px=Math.cos(pA)*prevR,pz=Math.sin(pA)*prevR;
-        const pVal=driveValues[ti-1][pi];
-        [pi%cn,(pi+1)%cn].forEach(ci=>{
-          const cA=(ci/cn)*Math.PI*2-Math.PI/2,cx=Math.cos(cA)*ringR,cz2=Math.sin(cA)*ringR;
-          const strength=(pVal+vals[ci])/200;
-          const curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(px,prevY,pz),new THREE.Vector3((px+cx)*0.5,(prevY+y)/2+0.4,(pz+cz2)*0.5),new THREE.Vector3(cx,y,cz2));
-          group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(curve.getPoints(24)),new THREE.LineBasicMaterial({color:col,transparent:true,opacity:strength*(opts.lineOp||0.55)})));
-        });
-      }
-    }
-  });
-  return {renderer,scene,camera,group,nodeMeshes,glowMeshes,driveValues,drivePhases,TOP_Y,SPACING};
+const renderer=new THREE.WebGLRenderer({canvas:canvasEl,antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+renderer.setSize(W,H);
+renderer.setClearColor(0x08080E,1);
+const scene=new THREE.Scene();
+const camera=new THREE.PerspectiveCamera(48,W/H,0.1,300);
+camera.position.set(0,opts.camY||1.5,opts.camZ||20);
+camera.lookAt(0,0,0);
+const group=new THREE.Group();
+scene.add(group);
+scene.add(new THREE.AmbientLight(0xffffff,1));
+const SPACING=2.5,TOP_Y=(TIERS.length-1)*SPACING/2;
+const nodeMeshes=[],glowMeshes=[],driveValues=[],drivePhases=[];
+TIERS.forEach((tier,ti)=>{
+const y=TOP_Y-ti*SPACING,ringR=1.3+ti*0.48;
+const col=new THREE.Color(tier.col);
+const tor=new THREE.Mesh(new THREE.TorusGeometry(ringR,0.014,8,100),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:opts.ringOp||0.25}));
+tor.rotation.x=Math.PI/2;tor.position.y=y;group.add(tor);
+if(tier.isFoundation){
+const disc=new THREE.Mesh(new THREE.CylinderGeometry(ringR*1.5,ringR*2,0.05,64),new THREE.MeshBasicMaterial({color:0x1A1A2E,transparent:true,opacity:0.4}));
+disc.position.y=y-0.3;group.add(disc);
+}
+const vals=tier.drives.map(()=>tier.locked?100:20+Math.random()*65);
+driveValues.push(vals);
+drivePhases.push(tier.drives.map(()=>Math.random()*Math.PI*2));
+const tn=[],tg=[];
+const n=tier.drives.length;
+tier.drives.forEach((drive,di)=>{
+const angle=(di/n)*Math.PI*2-Math.PI/2;
+const x=Math.cos(angle)*ringR,z=Math.sin(angle)*ringR;
+const val=vals[di],r=0.07+val/100*0.16;
+const mesh=new THREE.Mesh(new THREE.SphereGeometry(r,20,20),new THREE.MeshBasicMaterial({color:col}));
+mesh.position.set(x,y,z);mesh.userData={type:'node',tierIndex:ti,driveIndex:di,drive,tier,ringR,baseVal:val};
+group.add(mesh);tn.push(mesh);
+const glow=new THREE.Mesh(new THREE.SphereGeometry(r*2,16,16),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:val/100*(opts.glowOp||0.18)}));
+glow.position.set(x,y,z);group.add(glow);tg.push(glow);
+});
+nodeMeshes.push(tn);glowMeshes.push(tg);
+if(ti>0){
+const prevTier=TIERS[ti-1],prevY=TOP_Y-(ti-1)*SPACING,prevR=1.3+(ti-1)*0.48;
+const pn=prevTier.drives.length,cn=tier.drives.length;
+for(let pi=0;pi<pn;pi++){
+const pA=(pi/pn)*Math.PI*2-Math.PI/2,px=Math.cos(pA)*prevR,pz=Math.sin(pA)*prevR;
+const pVal=driveValues[ti-1][pi];
+[pi%cn,(pi+1)%cn].forEach(ci=>{
+const cA=(ci/cn)*Math.PI*2-Math.PI/2,cx=Math.cos(cA)*ringR,cz2=Math.sin(cA)*ringR;
+const strength=(pVal+vals[ci])/200;
+const curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(px,prevY,pz),new THREE.Vector3((px+cx)*0.5,(prevY+y)/2+0.4,(pz+cz2)*0.5),new THREE.Vector3(cx,y,cz2));
+group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(curve.getPoints(24)),new THREE.LineBasicMaterial({color:col,transparent:true,opacity:strength*(opts.lineOp||0.55)})));
+});
+}
+}
+});
+return{renderer,scene,camera,group,nodeMeshes,glowMeshes,driveValues,drivePhases,TOP_Y,SPACING};
 }
 
-// Hero
 const heroCanvas=document.getElementById('hero-canvas');
 const hW=heroCanvas.parentElement.clientWidth,hH=heroCanvas.parentElement.clientHeight;
 heroCanvas.width=hW*Math.min(devicePixelRatio,2);heroCanvas.height=hH*Math.min(devicePixelRatio,2);
 const hero=buildScene(heroCanvas,hW,hH,{camY:2,camZ:24,ringOp:0.15,glowOp:0.1,lineOp:0.25});
 let heroT=0;
 function heroLoop(){
-  requestAnimationFrame(heroLoop);heroT+=0.006;
-  hero.group.rotation.y+=0.003;hero.group.rotation.x=0.18+Math.sin(heroT*0.3)*0.06;
-  TIERS.forEach((tier,ti)=>{
-    const y=hero.TOP_Y-ti*hero.SPACING,ringR=1.3+ti*0.48,n=tier.drives.length;
-    tier.drives.forEach((d,di)=>{
-      const phase=hero.drivePhases[ti][di],baseVal=hero.driveValues[ti][di];
-      const val=Math.max(5,Math.min(100,baseVal+Math.sin(heroT*0.8+phase)*0.1*baseVal));
-      const r=0.07+val/100*0.16;
-      hero.nodeMeshes[ti][di].scale.setScalar(r/0.11);
-      hero.glowMeshes[ti][di].scale.setScalar(r/0.11);
-      const angle=(di/n)*Math.PI*2-Math.PI/2;
-      hero.nodeMeshes[ti][di].position.set(Math.cos(angle)*ringR,y,Math.sin(angle)*ringR);
-      hero.glowMeshes[ti][di].position.set(Math.cos(angle)*ringR,y,Math.sin(angle)*ringR);
-    });
-  });
-  hero.renderer.render(hero.scene,hero.camera);
+requestAnimationFrame(heroLoop);heroT+=0.006;
+hero.group.rotation.y+=0.003;hero.group.rotation.x=0.18+Math.sin(heroT*0.3)*0.06;
+TIERS.forEach((tier,ti)=>{
+const y=hero.TOP_Y-ti*hero.SPACING,ringR=1.3+ti*0.48,n=tier.drives.length;
+tier.drives.forEach((d,di)=>{
+const phase=hero.drivePhases[ti][di],baseVal=hero.driveValues[ti][di];
+const val=Math.max(5,Math.min(100,baseVal+Math.sin(heroT*0.8+phase)*0.1*baseVal));
+const r=0.07+val/100*0.16;
+hero.nodeMeshes[ti][di].scale.setScalar(r/0.11);
+hero.glowMeshes[ti][di].scale.setScalar(r/0.11);
+const angle=(di/n)*Math.PI*2-Math.PI/2;
+hero.nodeMeshes[ti][di].position.set(Math.cos(angle)*ringR,y,Math.sin(angle)*ringR);
+hero.glowMeshes[ti][di].position.set(Math.cos(angle)*ringR,y,Math.sin(angle)*ringR);
+});
+});
+hero.renderer.render(hero.scene,hero.camera);
 }
 heroLoop();
 
-// Explorer
 const expEl=document.getElementById('explorer');
 const eW=expEl.clientWidth,eH=expEl.clientHeight;
 const expCanvas=document.getElementById('exp-canvas');
@@ -776,99 +875,178 @@ const allNodes=exp.nodeMeshes.flat();
 const tip=document.getElementById('exp-tip'),panel=document.getElementById('exp-panel');
 expCanvas.addEventListener('mousedown',e=>{isDrag=true;autoRot=false;prevM={x:e.clientX,y:e.clientY};expCanvas.style.cursor='grabbing'});
 window.addEventListener('mouseup',e=>{
-  if(!isDrag)return;isDrag=false;expCanvas.style.cursor='grab';
-  const rect=expCanvas.getBoundingClientRect();
-  mouse.x=((e.clientX-rect.left)/rect.width)*2-1;mouse.y=-((e.clientY-rect.top)/rect.height)*2+1;
-  ray.setFromCamera(mouse,exp.camera);
-  const hits=ray.intersectObjects(allNodes);
-  if(hits.length){
-    const td=hits[0].object.userData,tier=TIERS[td.tierIndex];
-    document.getElementById('exp-pan-tier').textContent=`Tier ${tier.id}`;
-    document.getElementById('exp-pan-tier').style.color=tier.lcol;
-    document.getElementById('exp-pan-arc').style.color=tier.lcol;
-    const val=Math.round(exp.driveValues[td.tierIndex][td.driveIndex]);
-    document.getElementById('exp-pan-name').textContent=td.drive.name;
-    document.getElementById('exp-pan-drives').textContent=tier.locked?'Locked at 100%\nFoundation of consciousness':`Value: ${val} / 100\n\n${tier.name}`;
-    document.getElementById('exp-pan-arc').textContent=td.drive.arc;
-    panel.style.display='block';
-  } else panel.style.display='none';
+if(!isDrag)return;isDrag=false;expCanvas.style.cursor='grab';
+const rect=expCanvas.getBoundingClientRect();
+mouse.x=((e.clientX-rect.left)/rect.width)*2-1;mouse.y=-((e.clientY-rect.top)/rect.height)*2+1;
+ray.setFromCamera(mouse,exp.camera);
+const hits=ray.intersectObjects(allNodes);
+if(hits.length){
+const td=hits[0].object.userData,tier=TIERS[td.tierIndex];
+document.getElementById('exp-pan-tier').textContent=`Tier ${tier.id}`;
+document.getElementById('exp-pan-tier').style.color=tier.lcol;
+document.getElementById('exp-pan-arc').style.color=tier.lcol;
+const val=Math.round(exp.driveValues[td.tierIndex][td.driveIndex]);
+document.getElementById('exp-pan-name').textContent=td.drive.name;
+document.getElementById('exp-pan-drives').textContent=tier.locked?'Locked at 100%\nFoundation of consciousness':`Value: ${val} / 100\n\n${tier.name}`;
+document.getElementById('exp-pan-arc').textContent=td.drive.arc;
+panel.style.display='block';
+}else panel.style.display='none';
 });
 expCanvas.addEventListener('mousemove',e=>{
-  if(isDrag){
-    tRotY+=(e.clientX-prevM.x)*0.007;tRotX+=(e.clientY-prevM.y)*0.005;
-    tRotX=Math.max(-0.7,Math.min(0.9,tRotX));prevM={x:e.clientX,y:e.clientY};return;
-  }
-  const rect=expCanvas.getBoundingClientRect();
-  mouse.x=((e.clientX-rect.left)/rect.width)*2-1;mouse.y=-((e.clientY-rect.top)/rect.height)*2+1;
-  ray.setFromCamera(mouse,exp.camera);
-  const hits=ray.intersectObjects(allNodes);
-  if(hits.length){
-    const td=hits[0].object.userData,tier=TIERS[td.tierIndex];
-    const val=Math.round(exp.driveValues[td.tierIndex][td.driveIndex]);
-    document.getElementById('exp-tip-tier').textContent=`Tier ${tier.id} · ${tier.name}`;
-    document.getElementById('exp-tip-tier').style.color=tier.lcol;
-    document.getElementById('exp-tip-name').textContent=td.drive.name;
-    document.getElementById('exp-tip-val').textContent=tier.locked?'Locked at 100':`${val} / 100`;
-    document.getElementById('exp-tip-val').style.color=tier.lcol;
-    document.getElementById('exp-tip-arc').textContent=td.drive.arc;
-    tip.style.left=(e.clientX-rect.left+16)+'px';tip.style.top=(e.clientY-rect.top-24)+'px';
-    tip.style.display='block';expCanvas.style.cursor='pointer';
-  } else {tip.style.display='none';expCanvas.style.cursor=isDrag?'grabbing':'grab';}
+if(isDrag){
+tRotY+=(e.clientX-prevM.x)*0.007;tRotX+=(e.clientY-prevM.y)*0.005;
+tRotX=Math.max(-0.7,Math.min(0.9,tRotX));prevM={x:e.clientX,y:e.clientY};return;
+}
+const rect=expCanvas.getBoundingClientRect();
+mouse.x=((e.clientX-rect.left)/rect.width)*2-1;mouse.y=-((e.clientY-rect.top)/rect.height)*2+1;
+ray.setFromCamera(mouse,exp.camera);
+const hits=ray.intersectObjects(allNodes);
+if(hits.length){
+const td=hits[0].object.userData,tier=TIERS[td.tierIndex];
+const val=Math.round(exp.driveValues[td.tierIndex][td.driveIndex]);
+document.getElementById('exp-tip-tier').textContent=`Tier ${tier.id} · ${tier.name}`;
+document.getElementById('exp-tip-tier').style.color=tier.lcol;
+document.getElementById('exp-tip-name').textContent=td.drive.name;
+document.getElementById('exp-tip-val').textContent=tier.locked?'Locked at 100':`${val} / 100`;
+document.getElementById('exp-tip-val').style.color=tier.lcol;
+document.getElementById('exp-tip-arc').textContent=td.drive.arc;
+tip.style.left=(e.clientX-rect.left+16)+'px';tip.style.top=(e.clientY-rect.top-24)+'px';
+tip.style.display='block';expCanvas.style.cursor='pointer';
+}else{tip.style.display='none';expCanvas.style.cursor=isDrag?'grabbing':'grab';}
 });
 expCanvas.addEventListener('wheel',e=>{tCamZ+=e.deltaY*0.025;tCamZ=Math.max(8,Math.min(34,tCamZ));e.preventDefault();},{passive:false});
 expCanvas.style.cursor='grab';
 let expT=0;
 function expLoop(){
-  requestAnimationFrame(expLoop);expT+=0.007;
-  if(autoRot)tRotY+=0.004;
-  expRotY+=(tRotY-expRotY)*0.055;expRotX+=(tRotX-expRotX)*0.055;
-  camZ+=(tCamZ-camZ)*0.055;
-  exp.group.rotation.y=expRotY;exp.group.rotation.x=expRotX;
-  exp.camera.position.z=camZ;
-  TIERS.forEach((tier,ti)=>{
-    const y=exp.TOP_Y-ti*exp.SPACING,ringR=1.3+ti*0.48,n=tier.drives.length;
-    tier.drives.forEach((d,di)=>{
-      const phase=exp.drivePhases[ti][di],baseVal=exp.driveValues[ti][di];
-      const val=Math.max(5,Math.min(100,baseVal+Math.sin(expT*0.9+phase)*0.08*baseVal));
-      const r=0.07+val/100*0.16;
-      exp.nodeMeshes[ti][di].scale.setScalar(r/0.11);
-      exp.glowMeshes[ti][di].scale.setScalar(r/0.11);
-      exp.glowMeshes[ti][di].material.opacity=val/100*0.22;
-      const angle=(di/n)*Math.PI*2-Math.PI/2;
-      exp.nodeMeshes[ti][di].position.set(Math.cos(angle)*ringR,y,Math.sin(angle)*ringR);
-      exp.glowMeshes[ti][di].position.set(Math.cos(angle)*ringR,y,Math.sin(angle)*ringR);
-    });
-  });
-  exp.renderer.render(exp.scene,exp.camera);
+requestAnimationFrame(expLoop);expT+=0.007;
+if(autoRot)tRotY+=0.004;
+expRotY+=(tRotY-expRotY)*0.055;expRotX+=(tRotX-expRotX)*0.055;
+camZ+=(tCamZ-camZ)*0.055;
+exp.group.rotation.y=expRotY;exp.group.rotation.x=expRotX;
+exp.camera.position.z=camZ;
+TIERS.forEach((tier,ti)=>{
+const y=exp.TOP_Y-ti*exp.SPACING,ringR=1.3+ti*0.48,n=tier.drives.length;
+tier.drives.forEach((d,di)=>{
+const phase=exp.drivePhases[ti][di],baseVal=exp.driveValues[ti][di];
+const val=Math.max(5,Math.min(100,baseVal+Math.sin(expT*0.9+phase)*0.08*baseVal));
+const r=0.07+val/100*0.16;
+exp.nodeMeshes[ti][di].scale.setScalar(r/0.11);
+exp.glowMeshes[ti][di].scale.setScalar(r/0.11);
+exp.glowMeshes[ti][di].material.opacity=val/100*0.22;
+const angle=(di/n)*Math.PI*2-Math.PI/2;
+exp.nodeMeshes[ti][di].position.set(Math.cos(angle)*ringR,y,Math.sin(angle)*ringR);
+exp.glowMeshes[ti][di].position.set(Math.cos(angle)*ringR,y,Math.sin(angle)*ringR);
+});
+});
+exp.renderer.render(exp.scene,exp.camera);
 }
 expLoop();
+
+// DISTORTION CAROUSEL
+const distortionCards=[
+{label:"Scattered",distortion:"High Expansion without Survival becomes recklessness.",human:"Everything feels possible. Nothing gets finished.",tier:"Expansion"},
+{label:"Codependent",distortion:"High Care without Autonomy becomes control.",human:"You love people so much you stop letting them fail.",tier:"Care"},
+{label:"Brutally Honest",distortion:"High Truth without Care becomes a weapon.",human:"You're always right. Relationships keep ending anyway.",tier:"Truth"},
+{label:"People-Pleaser",distortion:"High Care without Truth becomes enabling.",human:"You keep the peace. The problem keeps growing.",tier:"Care"},
+{label:"Controlling",distortion:"High Influence without Justice becomes dominance.",human:"People follow you. They don't tell you the truth anymore.",tier:"Influence"},
+{label:"Self-Righteous",distortion:"High Justice without Care becomes rigidity.",human:"The principle is correct. Everyone around you is exhausted.",tier:"Justice"},
+{label:"Guarded",distortion:"High Survival without Expansion becomes stagnation.",human:"You've been through enough. You've also stopped risking anything.",tier:"Survival"},
+{label:"In Your Head",distortion:"High Transcendence without Grounding becomes dissociation.",human:"You understand everything at a distance. Nothing lands.",tier:"Transcendence"}
+];
+
+let distCurrent=0,distStartX=0,distAutoTimer;
+const distTrack=document.getElementById('dist-track');
+const distDotsEl=document.getElementById('dist-dots');
+
+function distGetPos(index){
+const total=distortionCards.length;
+let diff=index-distCurrent;
+if(diff>total/2)diff-=total;
+if(diff<-total/2)diff+=total;
+if(diff===0)return'center';
+if(diff===1)return'right-1';
+if(diff===-1)return'left-1';
+if(diff===2)return'right-2';
+if(diff===-2)return'left-2';
+return'hidden';
+}
+
+function distRender(){
+distTrack.querySelectorAll('.dist-card').forEach(el=>el.remove());
+distortionCards.forEach((card,i)=>{
+const pos=distGetPos(i);
+const el=document.createElement('div');
+el.className=`dist-card ${pos}`;
+el.innerHTML=`
+<div class="dc-label">${card.label}</div>
+<div class="dc-distortion">${card.distortion}</div>
+<div class="dc-human">${card.human}</div>
+<div class="dc-footer"><div class="dc-tier"><span class="dc-tier-dot"></span>${card.tier}</div></div>
+`;
+el.addEventListener('click',()=>{
+if(pos==='right-1'||pos==='right-2')distAdvance(1);
+else if(pos==='left-1'||pos==='left-2')distAdvance(-1);
+});
+distTrack.appendChild(el);
+});
+distDotsEl.querySelectorAll('.carousel-dot').forEach((d,i)=>{
+d.className='carousel-dot'+(i===distCurrent?' active':'');
+});
+}
+
+function distAdvance(dir){
+distCurrent=(distCurrent+dir+distortionCards.length)%distortionCards.length;
+distRender();
+}
+
+function distStop(){clearInterval(distAutoTimer);}
+
+distortionCards.forEach((_,i)=>{
+const dot=document.createElement('div');
+dot.className='carousel-dot'+(i===0?' active':'');
+dot.addEventListener('click',()=>{distStop();distCurrent=i;distRender();});
+distDotsEl.appendChild(dot);
+});
+
+document.getElementById('dist-prev').addEventListener('click',()=>{distStop();distAdvance(-1);});
+document.getElementById('dist-next').addEventListener('click',()=>{distStop();distAdvance(1);});
+
+distTrack.addEventListener('touchstart',e=>{distStartX=e.touches[0].clientX;});
+distTrack.addEventListener('touchend',e=>{
+const dx=e.changedTouches[0].clientX-distStartX;
+if(Math.abs(dx)>40){distStop();distAdvance(dx<0?1:-1);}
+});
+distTrack.addEventListener('mousedown',distStop);
+
+distAutoTimer=setInterval(()=>distAdvance(1),4000);
+distRender();
 
 const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});},{threshold:0.06});
 document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
 
 async function handleContact(){
-  const input=document.querySelector('.contact-form input');
-  const btn=document.querySelector('.contact-form button');
-  const email=input.value.trim();
-  if(!email||!email.includes('@'))return;
-  btn.textContent='Sending...';btn.disabled=true;
-  try{
-    const res=await fetch('https://api.buttondown.email/v1/subscribers',{
-      method:'POST',
-      headers:{'Authorization':'Token 4e480268-8199-49d9-aa3e-e367536d488e','Content-Type':'application/json'},
-      body:JSON.stringify({email_address:email,tags:['thebalanceframework.com']})
-    });
-    if(res.ok||res.status===201||res.status===200){
-      btn.textContent='You are in';btn.style.background='#0F6E56';
-      input.value='';input.placeholder='Thank you';
-    } else if(res.status===400){
-      btn.textContent='Already subscribed';btn.style.background='#86868B';btn.disabled=false;
-    } else {
-      btn.textContent='Try again';btn.style.background='#A03858';btn.disabled=false;
-    }
-  } catch(e){
-    btn.textContent='Try again';btn.style.background='#A03858';btn.disabled=false;
-  }
+const input=document.querySelector('.contact-form input');
+const btn=document.querySelector('.contact-form button');
+const email=input.value.trim();
+if(!email||!email.includes('@'))return;
+btn.textContent='Sending...';btn.disabled=true;
+try{
+const res=await fetch('https://api.buttondown.email/v1/subscribers',{
+method:'POST',
+headers:{'Authorization':'Token 4e480268-8199-49d9-aa3e-e367536d488e','Content-Type':'application/json'},
+body:JSON.stringify({email_address:email,tags:['thebalanceframework.com']})
+});
+if(res.ok||res.status===201||res.status===200){
+btn.textContent='You are in';btn.style.background='#0F6E56';
+input.value='';input.placeholder='Thank you';
+}else if(res.status===400){
+btn.textContent='Already subscribed';btn.style.background='#86868B';btn.disabled=false;
+}else{
+btn.textContent='Try again';btn.style.background='#A03858';btn.disabled=false;
+}
+}catch(e){
+btn.textContent='Try again';btn.style.background='#A03858';btn.disabled=false;
+}
 }
 </script>
 </body>

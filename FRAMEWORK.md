@@ -110,6 +110,31 @@ The map feeds back into its own foundation.
 
 ---
 
+### Awareness
+
+**Definition:** The drive to perceive clearly — to stay in accurate contact with what is actually happening, both in the surrounding environment and in one's own inner states as they arise.
+
+| Setting | Expression |
+|---------|------------|
+| 0–10 | Little registers, inside or out. Misses cues others find obvious. |
+| 11–30 | Notices what is directly relevant. Wider context and inner shifts stay in the background. |
+| 31–50 | Balanced perception. Reads self and surroundings without being ruled by either. |
+| 51–70 | Highly attuned. Registers changes in mood, space, and internal state before others do. |
+| 71–90 | Continuously scanning. Environment and self are both felt in high resolution. |
+| 91–100 | Saturated by input. Cannot separate signal from noise. Perception crowds out action. |
+
+**High distortion (~80+):** Without sufficient Stability or Tier 1 Coherence, Awareness becomes saturation. Scans without filtering, until neither the world nor the self can be read as signal.
+
+**Low distortion (~15-):** Little registers, inside or out. Moves through existence half-blind to its surroundings and unaware of its own states. Reacts to what it never saw coming.
+
+**Key interactions:**
+- High + high Stability = grounded perceptiveness. Reads self and room without being destabilized by either.
+- High + low Stability = perceives every shift but has nowhere to stand. Attunement curdles into anxiety.
+- High + high Truth = clear sight. Perceives what is actually there, outside and within, and names it accurately.
+- High + high Care = attunement in service of others. Senses what a person needs before they voice it.
+
+---
+
 ### Autonomy
 
 **Definition:** The drive to author one's own existence. To initiate from an internal center rather than from pressure, fear, or imitation.
@@ -568,25 +593,6 @@ The map feeds back into its own foundation.
 **High distortion (~85+):** Without sufficient Care or Reciprocity, Contribution becomes performance. Adds value visibly. Struggles to give where no one is watching.
 
 **Low distortion (~15-):** No drive to add value beyond immediate exchange. Exists without felt obligation to improve anything. Leaves things exactly as found.
-
----
-
-### Devotion
-
-**Definition:** The drive toward sustained commitment to something beyond the self. The voluntary, repeated choice to give oneself to a person, practice, or cause across time.
-
-| Setting | Expression |
-|---------|------------|
-| 0–10 | No capacity for sustained commitment beyond self-interest. |
-| 11–30 | Loyal within limits. Devotion available but not defining. |
-| 31–50 | Sustains meaningful relationships and practices across time without heroic effort. |
-| 51–70 | Deep loyalty. Shows up consistently especially when it's costly. |
-| 71–90 | The commitments define the person. Breaking them would require becoming someone else. |
-| 91–100 | Boundary between self and commitment dissolves. |
-
-**High distortion (~85+):** Without sufficient Autonomy or Truth, Devotion becomes captivity. Cannot leave what has become harmful. Loyalty survives long after it should have evolved.
-
-**Low distortion (~15-):** No capacity for sustained commitment. Everything transactional and present-tense. Cannot build anything that requires showing up across time.
 
 ---
 

@@ -27,15 +27,15 @@ The Balance Framework is built to answer that question.
 
 ## The Architecture
 
-Seven tiers. Forty-two drives. One cascading system.
+Seven tiers. Thirty-five drives. One cascading system.
 
 | Tier | Name | Drives |
 |------|------|--------|
 | 1 | Conditions for Consciousness *(locked at 100%)* | Persistence · Coherence · Connection |
-| 2 | Self-Expansion Drives | Autonomy · Affiliation · Achievement · Influence · Novelty · Stability |
+| 2 | Self-Expansion Drives | Awareness · Autonomy · Affiliation · Achievement · Influence · Novelty · Stability |
 | 3 | Moral Drives | Justice · Care · Responsibility · Truth · Reciprocity |
 | 4 | Identity & Narrative Drives | Identity · Integrity · Recognition · Continuity · Belonging · Story |
-| 5 | Meaning & Purpose Drives | Meaning · Purpose · Contribution · Devotion · Legacy |
+| 5 | Meaning & Purpose Drives | Meaning · Purpose · Contribution · Legacy |
 | 6 | Integration Drives | Wholeness · Acceptance · Wisdom · Balance · Peace |
 | 7 | Transcendence & Communion | Awe · Communion · Surrender · Grace · Unity |
 

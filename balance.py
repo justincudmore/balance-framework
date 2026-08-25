@@ -143,6 +143,7 @@ TIER_1_DRIVES = [
 ]
 
 TIER_2_DRIVES = [
+    Drive(id="awareness",   name="Awareness",   tier=2),
     Drive(id="autonomy",    name="Autonomy",    tier=2),
     Drive(id="affiliation", name="Affiliation", tier=2),
     Drive(id="achievement", name="Achievement", tier=2),
@@ -172,7 +173,6 @@ TIER_5_DRIVES = [
     Drive(id="meaning",      name="Meaning",      tier=5),
     Drive(id="purpose",      name="Purpose",      tier=5),
     Drive(id="contribution", name="Contribution", tier=5),
-    Drive(id="devotion",     name="Devotion",     tier=5),
     Drive(id="legacy",       name="Legacy",       tier=5),
 ]
 

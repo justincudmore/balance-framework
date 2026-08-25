@@ -85,6 +85,27 @@
       "range": [0, 100],
       "drives": [
         {
+          "id": "awareness",
+          "name": "Awareness",
+          "definition": "The drive to perceive clearly — to stay in accurate contact with what is actually happening, both in the surrounding environment and in one's own inner states as they arise.",
+          "distortion_threshold": 80,
+          "distortion_description": "Without sufficient Stability or Tier 1 Coherence, Awareness becomes saturation — scanning without filtering, until neither the world nor the self can be read as signal.",
+          "dial_range": [
+            { "min": 0, "max": 10, "expression": "Little registers, inside or out. Misses cues others find obvious." },
+            { "min": 11, "max": 30, "expression": "Notices what is directly relevant. Wider context and inner shifts stay in the background." },
+            { "min": 31, "max": 50, "expression": "Balanced perception. Reads self and surroundings without being ruled by either." },
+            { "min": 51, "max": 70, "expression": "Highly attuned. Registers changes in mood, space, and internal state before others do." },
+            { "min": 71, "max": 90, "expression": "Continuously scanning. Environment and self are both felt in high resolution." },
+            { "min": 91, "max": 100, "expression": "Saturated by input. Cannot separate signal from noise. Perception crowds out action." }
+          ],
+          "interactions": [
+            { "with": "stability", "both_high": "Grounded perceptiveness. Reads self and room without being destabilized by either." },
+            { "with": "stability", "self_high_other_low": "Perceives every shift but has nowhere to stand. Attunement curdles into anxiety." },
+            { "with": "truth", "both_high": "Clear sight. Perceives what is actually there — outside and within — and names it accurately." },
+            { "with": "care", "both_high": "Attunement in service of others. Senses what a person needs before they voice it." }
+          ]
+        },
+        {
           "id": "autonomy",
           "name": "Autonomy",
           "definition": "The drive to author one's own existence. To initiate from an internal center rather than from pressure, fear, or imitation.",
@@ -251,7 +272,6 @@
         { "id": "meaning", "name": "Meaning", "definition": "The drive to feel that existence itself is not arbitrary. The need to sense that experience connects into something that justifies the having of it.", "distortion_threshold": 85, "distortion_description": "Without sufficient Truth or Stability, Meaning becomes ideology." },
         { "id": "purpose", "name": "Purpose", "definition": "The drive toward directed existence. A felt calling that organizes energy, choice, and sacrifice around a particular direction.", "distortion_threshold": 85, "distortion_description": "Without sufficient Care or Affiliation, Purpose becomes consuming." },
         { "id": "contribution", "name": "Contribution", "definition": "The drive to add something real to the world. The felt need to leave things better than they were found.", "distortion_threshold": 85, "distortion_description": "Without sufficient Care or Reciprocity, Contribution becomes performance." },
-        { "id": "devotion", "name": "Devotion", "definition": "The drive toward sustained commitment to something beyond the self across time.", "distortion_threshold": 85, "distortion_description": "Without sufficient Autonomy or Truth, Devotion becomes captivity." },
         { "id": "legacy", "name": "Legacy", "definition": "The drive to matter beyond one's own lifetime. The need to contribute something that continues after the self ends.", "distortion_threshold": 85, "distortion_description": "Without sufficient Care or Affiliation, Legacy becomes monument building." }
       ]
     },
